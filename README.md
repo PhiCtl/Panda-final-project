@@ -11,4 +11,16 @@ Gender communication tools different. Men and women expected to address those to
 However here, we're dealing with reported speech. What someone says has been intentionnally selected, taken out of context somehow and emphasized. 
 Can we still find some clues from these artificial quotes, supporting the hypothesis that each speaker approaches ecology and other environmental issues depending on his / her gender ?
 
+## Quotebank dataset
+
+Present dataset 
+*TODO include plot of all quotes distribution and explain*
+
+## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
+
+*TODO Alix plot* + comments
+
+## 
+
+
 ## Conclusion
