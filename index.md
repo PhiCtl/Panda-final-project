@@ -98,17 +98,17 @@ We'll turn to a more powerful tool to explore topics brought by the speakers, na
 {% include topic_distrib_all_genders.html %}
 
 Top 6 topics...                            |  ...for all genders
-:                                         :|:                                           :
+:-----------------------------------------:|:-------------------------------------------:
 ![_includes/0_wc.jpg](_includes/0_wc.jpg)  |  ![_includes/1_wc.jpg](_includes/1_wc.jpg)
-:                                         :|:                                           :
+:-----------------------------------------:|:-------------------------------------------:
 ![_includes/2_wc.jpg](_includes/2_wc.jpg)  |  ![_includes/3_wc.jpg](_includes/3_wc.jpg)
-:                                         :|:                                           :
+:-----------------------------------------:|:-------------------------------------------:
 ![_includes/4_wc.jpg](_includes/4_wc.jpg)  |  ![_includes/5_wc.jpg](_includes/5_wc.jpg)
 
 Main speakers
 results and comments
 
-
+kkkk
 
 
 ## Conclusion
