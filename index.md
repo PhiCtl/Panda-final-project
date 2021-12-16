@@ -94,7 +94,13 @@ Random Forest performs as expected quite well, but the analysis of feature impor
 
 ### Top2Vec
 
-All speakers
+We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. 
+{% include topic_distrib_all_genders.html %}
+
+Solarized dark                             |  Solarized Ocean
+:-----------------------------------------:|:-------------------------------------------:
+![_includes/0_wc.jpg](_includes/0_wc.jpg)  |  ![_includes/1_wc.jpg](_includes/1_wc.jpg)
+
 Main speakers
 results and comments
 
