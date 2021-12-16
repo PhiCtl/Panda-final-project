@@ -76,7 +76,21 @@ As a starter, we'll have a look at how each topic evolved for each gender across
 {% include topic_evolution_men.html %}
 {% include topic_evolution_women.html %}
 
--> log reg + rf results and comments
+The words refer to the first most meaningful word for each topic.
+We don't learn much from a gender-split analysis, but we can still observe that the topic repartition and evolution 
+is quite similar. "People" and "Work" topics seem quite popular among our speakers, and we see a small rise of "Climate" and "Year" topic towards the end of
+our studied period. 
+Let's see if logistic regression and random forest can bring us some more details about a gender difference. We took care of tuning random forest in order to select the best depth and number of estimators.  
+
+|                      | Random Forest | Logistic regression |
+|----------------------|---------------|---------------------|
+| Accuracy on test set | 0.741         | 0.518               |
+| Precision            | 0.741         | 0.524               |
+| Recall               | 0.747         | 0.463               |
+
+Random Forest performs as expected quite well, but the analysis of feature importance doesn't bring us much. Indeed, each feature seems to contribute equally to the decision made. 
+
+{% include random_forest_feature_importance.html %}
 
 ### Top2Vec
 
