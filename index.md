@@ -36,6 +36,8 @@ Let's go further and analyse who is taking the floor...
 ### Topics broken down to words
 
 We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set.
+
+
 |                      | Random Forest | Logistic regression |
 |----------------------|---------------|---------------------|
 | Accuracy on test set | 0.556         | 0.567               |
@@ -45,6 +47,8 @@ We're reaching a cross road, and before following the path of topic analysis, le
  Given all the pieces of information coming from the words that we have at our disposal, across all quotes, we cannot make a very significative statement about the speaker gender. This can be explained by the following fact. Even if we artificially balanced the dataset, we have very few quotes attributed to women, and thus less diversity in the words. Therefore our classifiers weren't able to grasp a meaningful aspect linked to gender out of it. We can nevertheless explore how our more performant classifier made its choices, taking a look at each coefficient importance into the task of predicting whether the speaker is a woman or not. The more positive the coefficient, the more weight it gives towards predicting "womea", the more negative, the better it is to predict "man".
 
 {% include coefs_logistic_gender_prediction.html %}
+
+Two interesting facts can be highlighted there. First of all, the most prominent words are gender related, such as _girl_, _woman_, _guy_, or _husband_. Secondly, action verbs like _shall_, _execute_ and _operate_ are used to classify "man", while more diverse types of words are linked to predicting "woman". We managed to pick one interesting aspect from our guests !
 
 ### Where LDA comes into play
 
