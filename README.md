@@ -1,4 +1,5 @@
 # Who does really care about climate change ?
+## A gender driven analysis to ecology related topics through the media from 2015 to 2020
 
 Abstract: The idea of our project came from observing the people around us in their dailylife: women seem more involved in ecology than men. Indeed, among the people we meet, the proportion of women making ecological efforts seems to be higher than the proportion of men (vegetarianism, waste reduction, second hand, involvement in ecological associations etc...). %However, this observation is only the result of our subjective observations, in only one aspect of ecology: everyday actions. 
 
