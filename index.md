@@ -29,7 +29,22 @@ Let's go further and analyse who is taking the floor...
 
 *TODO Alix plot* + comments
 
+
+
 ## Show me what you're talking about and I'll tell you who you are
+
+### Topics broken down to words
+
+We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set.
+|                      | Random Forest | Logistic regression |
+|----------------------|---------------|---------------------|
+| Accuracy on test set | 0.556         | 0.567               |
+| Precision            | 0.561         | 0.565               |
+| Recall               | 0.485         | 0.564               |
+
+ Given all the pieces of information coming from the words that we have at our disposal, across all quotes, we cannot make a very significative statement about the speaker gender. This can be explained by the following fact. Even if we artificially balanced the dataset, we have very few quotes attributed to women, and thus less diversity in the words. Therefore our classifiers weren't able to grasp a meaningful aspect linked to gender out of it. We can nevertheless explore how our more performant classifier made its choices, taking a look at each coefficient importance into the task of predicting whether the speaker is a woman or not. The more positive the coefficient, the more weight it gives towards predicting "womea", the more negative, the better it is to predict "man".
+
+{% include coefs_logistic_gender_prediction.html %}
 
 ### Where LDA comes into play
 
@@ -57,6 +72,13 @@ As a starter, we'll have a look at how each topic evolved for each gender across
 {% include topic_evolution_men.html %}
 {% include topic_evolution_women.html %}
 
+-> log reg + rf results and comments
+
+### Top2Vec
+
+All speakers
+Main speakers
+results and comments
 
 
 
