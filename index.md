@@ -50,8 +50,6 @@ How evolved the number of occurences of the most famous speakers over the 5 year
 
 {% include evolution_most_famous.html %}
 
-{% include topic_evolution_men.html %}
-
 ## Show me what you're talking about and I'll tell you who you are
 
 ### Topics broken down to words
