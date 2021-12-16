@@ -26,9 +26,9 @@ Project structure :
 
 The goal is to analyse our dataset in order to answer the following research questions: 
 
-1. How the ecology topic evoled between 2015 and 2019? (we compare only year 2015 and 2019 because we want to study the evolution between the first year available in the dataset and the most recent and with complete data year. Moreover, we want to see a change on the subject of ecology due to an awareness o individuals these last years.
-2. What are the proportions of men and women talking about ecology between 2015 and 2019? Do they differ a lot?
-3. Defining several subfields of ecology (Politics, daily life action etc...), we would like to study which "subfields" are more attributed to men speakers and which ones are more attributed to women speakers?
+1. How has the topic of ecology evolved from 2015 to 2020? We want to underline the evolution of the theme of ecology within these 5 years. Furthermore, we want to see a change on the topic of ecology due to the awareness of individuals in recent years.
+2. What is the proportion of men and women talking about ecology between 2015 and 2020? Is it possible to notice a significant difference?
+3. Defining several sub-topics from the main ecology-topic (politics, daily life action etc...), we would like to study which "sub-topics" are more attributed to men speakers and which ones are more attributed to women speakers?
 4. Focusing on the topic of ecology, do men and women share the same communication tools? Which kind of words is more used by men, which one by women (for example: emotional words, pronouns and so on) ? Do we observe an evolution in the words used by each gender between 2015 and 2019?
 5. Which hypotheses can we make explaining the observations of the previous questions? (for example: women speakers are more involved in ecology of the "daily life" because they are more inolved than men in the housework).
 
