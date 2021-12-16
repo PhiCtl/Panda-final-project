@@ -52,6 +52,11 @@ We can really explore each topic using pyLDAvis tool. We can manually extract th
 
 ### Can we infer the gender from the quote ? 
 
+As a starter, we'll have a look at how each topic evolved for each gender across years. 
+
+{% include topic_evolution_men.html %}
+{% include topic_evolution_women.html %}
+
 
 
 
