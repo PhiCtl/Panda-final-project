@@ -129,6 +129,9 @@ results and comments
 
 kkkk
 
+## Word Frequency Analysis 
+
+{% include verbs_freq.html %}
 
 ## Conclusion
 
