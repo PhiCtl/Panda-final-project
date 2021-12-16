@@ -21,6 +21,7 @@ Therefore, the involvement of gender in ecology seems to differ from one field t
 
 Present dataset 
 *TODO include plot of all quotes distribution and explain*
+{% include lda.html %}
 
 ## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
 
