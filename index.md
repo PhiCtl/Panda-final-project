@@ -28,7 +28,7 @@ Let's go further and analyse who is taking the floor...
 ## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
 
 *TODO Alix plot* + comments
-{% include evolution_men_women_proportion.png %}
+{% include evolution_prop_men_women.html %}
 {% include most_famous_all.html %}
 {% include most_famous_men.html %}
 {% include most_famous_women.html %}
