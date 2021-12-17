@@ -5,7 +5,6 @@ div{
  text-align: justify}
  
   table{ 
-  class="center"
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width:100%
@@ -87,7 +86,9 @@ Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which c
 
 <h3> Topics broken down to words </h3>
  
-We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set. <br>
+We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set.
+ 
+ <br>
 
 <table class="center">
  <tr>
@@ -112,6 +113,8 @@ We're reaching a cross road, and before following the path of topic analysis, le
  </tr>
 </table>
 
+  <br> 
+ 
  Given all the pieces of information coming from the words that we have at our disposal, across all quotes, we cannot make a very significative statement about the speaker gender. This can be explained by the following fact. Even if we artificially balanced the dataset, we have very few quotes attributed to women, and thus less diversity in the words. Therefore our classifiers weren't able to grasp a meaningful aspect linked to gender out of it. We can nevertheless explore how our more performant classifier made its choices, taking a look at each coefficient importance into the task of predicting whether the speaker is a woman or not. The more positive the coefficient, the more weight it gives towards predicting "woman", the more negative, the better it is to predict "man".
 
 {% include coefs_logistic_gender_prediction.html %}
@@ -122,7 +125,9 @@ We decide to turn left, and discover the topics landscapes. Don't loose the trac
  
 <h3> Where LDA comes into play </h3>
 Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed <b>248'211 quotes</b>, among which we have <b>47'374 women and 200'837 men</b>. So <b>20%</b> (only...) of our guests are women, and the <b>80%</b> left are men. 
-LDA managed to extract <b>7 topics</b> that are presented in details below : <br>
+LDA managed to extract <b>7 topics</b> that are presented in details below :
+ 
+ <br>
 
 <table class="center">
  <tr>
@@ -217,7 +222,9 @@ The words refer to the first most meaningful word for each topic.
 We don’t learn much from a gender-split analysis, but we can still observe that the topic repartition and evolution is quite similar. “People” and “Work” topics seem quite popular among our speakers, and we see a small rise of  “Climate” and “Year” topic towards the end of our studied period.
 
 Let's put on our hiking shoes, grab our camera and follow the track. Will logistic regression and random forest lead us to a clear gender distinction within topics ? We infer each quote topic multinomial distribution, and we write down the score for each topic to constitute our feature matrix. Then we make sure that we have 
-as many quotes from men than women speakers. Finally, we took care of tuning random forest in order to select the best depth and number of estimators.  <br>
+as many quotes from men than women speakers. Finally, we took care of tuning random forest in order to select the best depth and number of estimators. 
+ 
+ <br>
 
 <table class="center">
  <tr>
@@ -259,7 +266,9 @@ Each topic vector is then computed as the centroid of the found clusters.
 We look up to the sky and here are the top 10 main topics in the clouds. The first one deals with hope and solutions, the second and third ones 
 are much more pessimistic, and could present the disasters incurred by global warming along with the scarceness of the measures taken so far to prevent them. 
 At the fourth position, water related issues are raised, then come again some disasters and we end on the fith one with a more optimistic note, namely all the solutions that
-we have at our disposal. The sixth topic follows on the solutions, while the seventh brings forward recycling. The nineth points out pollution and polluters while the last one is more generally dealing with ecology. <br>
+we have at our disposal. The sixth topic follows on the solutions, while the seventh brings forward recycling. The nineth points out pollution and polluters while the last one is more generally dealing with ecology.
+ 
+ <br>
 
 <table class="center">
  <tr>
@@ -296,7 +305,9 @@ Below you can explore and compare the top 20 topics brought by our speakers. Eac
 Let's climb again, with our two mountain guides, Logistic Regression and Random Forest. We took the same number of quotes for men and women speakers
 and we infer the top 20 topics for each quote. And here are the results ! We reached a new summit, and the clouds are starting to make way for the sunshine. 
 We reached almost as good results as from word only predictions. Dear guest speaker, tell me what you are talking about and I can predict with 56% of chance whether you're
-a man or a woman. Well, that is not amazing yet...  <br>
+a man or a woman. Well, that is not amazing yet...  
+ 
+ <br>
 
 <table class="center">
  <tr>
@@ -349,7 +360,9 @@ about their speaker occupation. Have you already spot the "hoax" word into Trump
 <img src="assets/Word_clouds_males.jpg" alt="Trulli" class=center width="800" height="800">
  <br>
  
-For a last time, we predict with logistic regression and random forest classifier. <br>
+For a last time, we predict with logistic regression and random forest classifier. 
+ 
+ <br>
 
 <table class="center">
  <tr>
@@ -376,7 +389,8 @@ For a last time, we predict with logistic regression and random forest classifie
  <br>
  
 Our dataset was quite imbalanced this time, and even if we have a higher accuracy for random forest classifier, it is not meaningful since it wasn't able to catch most of 
-the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice !<br> 
+the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice !
+ <br> 
 
 <img src="assets/logistic_regression_confusion_matrix_famous_speakers.jpg" alt="Trulli">
 <br>
@@ -402,7 +416,9 @@ So we looked at the differences between the two genders. We visualized the densi
 {% include quotations_density.html %}
 
 
-We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. You can find below examples of positive and negative quotes.  <br>
+We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. You can find below examples of positive and negative quotes.  
+ 
+ <br>
 
 <table class="center">
  <tr>
@@ -465,9 +481,11 @@ For each study group of words considered (namely between verbs, nouns, adjective
 Which <i>verbs</i> are used most by men and which by women?
 
 {% include verbs_freq.html %}
-From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs <i>go</i> and <i>get</i> by male speakers than female spekers. <br>
+From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs <i>go</i> and <i>get</i> by male speakers than female spekers. 
+ 
+ <br>
 
- <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="100" height="300">
+ <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="300" height="500">
  
 <h4> Nouns </h4>
 
@@ -475,16 +493,20 @@ Which <i>nouns</i> are used most by men and which by women?
 
 {% include nouns_freq.html %}
 
-Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. <br>
+Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
+ 
+ <br>
 
- <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="100" height="300">
+ <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="500">
  
 <h4> Adjectives </h4>
 Which <i>adjectives</i> are used most by men and which by women?
 
 {% include adj_freq.html %}
 
-Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. <br>
+Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. 
+ 
+ <br>
 
  <img src="assets/adj_freq.jpg" alt="Trulli" class=center width="300" height="500">
 <br>
@@ -494,9 +516,11 @@ Which <i>adverbs</i> are used most by men and which by women?
  
 {% include adverbs_freq.html %}
 
-On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers. <br>
+On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers. 
+ 
+ <br>
 
- <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="100" height="300">
+ <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="300" height="500">
 
 <h2> Conclusion </h2>
  
@@ -542,13 +566,17 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
  <tr>
   <th> Brognart Blanche </th>
   <th> Descourtils Philippine     </th>
+ </tr>
+ <tr>
+  <td> <img src="assets/photo_blanche.jpg" > </td>
+  <td> <img src="assets/photo_phil.jpeg" > </td>
+ </tr>
+  <tr>
   <th> Louvet Alix </th>
   <th> Petronio Stella    </th>
  </tr>
- <tr>
-  <td> <img src="assets/photo_blanche.jpg"  width="200" height="100"> </td>
-  <td> <img src="assets/photo_phil.jpeg" width="200" height="200"> </td>
-  <td> <img src="assets/photo_alix.jpeg" width="100" height="100"> </td>
+  <tr>
+  <td> <img src="assets/photo_alix.jpeg" > </td>
   <td> <img src="assets/photo_stella.jpg" >  </td>
  </tr>
 </table>
