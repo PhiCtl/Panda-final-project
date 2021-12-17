@@ -105,11 +105,11 @@ _TODO: comment on the distribution and do plot again. Comment on the raised topi
 
 Top 6 topics...                                    |  ...for all genders
 
-![/Panda-final-project/_includes/0_wc.jpg](/Panda-final-project/_includes/0_wc.jpg)  |  ![1_wc.jpg](1_wc.jpg)
-:-------------------------------------------------:|:--------------------------------------------------:
-![2_wc.jpg](/Panda-final-project/assets/2_wc.jpg)  |  ![3_wc.jpg](/Panda-final-project/assets/3_wc.jpg)
-:-------------------------------------------------:|:--------------------------------------------------:
-![4_wc.jpg](/Panda-final-project/assets/4_wc.jpg)  |  ![5_wc.jpg](/Panda-final-project/assets/5_wc.jpg)
+![assets/0_wc.jpg](assets/0_wc.jpg)  |  ![assets/1_wc.jpg](assets/1_wc.jpg)
+:-----------------------------------:|:--------------------------------------:
+![assets/2_wc.jpg](assets/2_wc.jpg)  |  ![assets/3_wc.jpg](assets/3_wc.jpg)
+:-----------------------------------:|:--------------------------------------:
+![assets/4_wc.jpg](assets/4_wc.jpg)  |  ![assets/5_wc.jpg](assets/5_wc.jpg)
 
 
 _TODO : set up for test and comment on the results_
@@ -130,11 +130,11 @@ _TODO : present speakers_
 
 ![assets/Word_clouds_females.jpg](assets/Word_clouds_females.jpg)
 
-![Word_clouds_males.jpg](Word_clouds_males.jpg)
+![assets/Word_clouds_males.jpg](assets/Word_clouds_males.jpg)
 
 _TODO : present test and comment on results and coefficients_
 
-![/Panda-final-project/assets/logistic_regression_confusion_matrix_famous_speakers.jpg](/Panda-final-project/assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
+![assets/logistic_regression_confusion_matrix_famous_speakers.jpg](assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
 
 {% include coefs_logistic_gender_topic_prediction_famous_speakers.html %}
 
