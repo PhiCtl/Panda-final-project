@@ -3,6 +3,8 @@
 
 ## Introduction
 
+<center>Centered text</center>
+
 Dear ADAdventurer, 
 
 We welcome you onboard a datatrip throughout ecology, environment and climate change. During this journey, you'll be following men and women speakers from a bunch of English newspapers and websites, from 2015 to 2020. 
