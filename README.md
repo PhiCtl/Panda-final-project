@@ -16,7 +16,7 @@ Therefore, the involvement of gender in ecology seems to differ from one field t
 - Study 3: [https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/](https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/)
 
 ## Do you really want to know more about the climate change 🌳? 
-If you are really interested in our ADAdventure, don't wait, run and to visit our site ▶️ [Who does really care about climate change ?](https://phictl.github.io/Panda-final-project/).
+If you are really interested in our ADAdventure, don't wait, run and visit our site ▶️ [Who does really care about climate change ?](https://phictl.github.io/Panda-final-project/).
 
 ## Project structure:
 
