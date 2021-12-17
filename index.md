@@ -427,8 +427,8 @@ We therefore looked to see if there were differences between positive and negati
   <th> Score </th>
  </tr>
  <tr>
-  <td>  "MeToo has created an environment of  empathy. The biggest positive is that now people don't dismiss it." </td>
-  <td> 0,6808  </td>
+  <td>  "This is an awesome project in a whole bunch a ways " </td>
+  <td> 0,6249 </td>
   <td> "It's indicative of a very worrying trend. If we don't  reign in global warming pollution,about a million species or 15 percent of species on earth are vulnerable to extinction  from climate change." </td>
   <td> -0,5267  </td>
  </tr>
@@ -521,7 +521,9 @@ On the use of adverbs, it can be noted that the three most used by both genders 
 
 <h2> Conclusion </h2>
 
-<h2> Appendix </h2>
+ <h2> The pandas team 🐼  </h2>
+ <img src="assets/verbs_freq.jpg" alt="Trulli">
+ 
 
 <h3> Our data </h3>
 
