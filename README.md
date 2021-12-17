@@ -1,7 +1,8 @@
 # Who does really care about climate change ?
 ## A gender driven analysis to ecology related topics through the media from 2015 to 2020
 
-Abstract: The idea of our project came from observing the people around us in their dailylife: women seem more involved in ecology than men. Indeed, among the people we meet, the proportion of women making ecological efforts seems to be higher than the proportion of men (vegetarianism, waste reduction, second hand, involvement in ecological associations etc...). %However, this observation is only the result of our subjective observations, in only one aspect of ecology: everyday actions. 
+_Abstract_: 
+The idea of our project came from observing the people around us in their dailylife: women seem more involved in ecology than men. Indeed, among the people we meet, the proportion of women making ecological efforts seems to be higher than the proportion of men (vegetarianism, waste reduction, second hand, involvement in ecological associations etc...). %However, this observation is only the result of our subjective observations, in only one aspect of ecology: everyday actions. 
 
 By reviewing scientific litterature, we found a study (1) which showed that men in Sweden have a larger carbon footprint than women. In line with the thesis that women are more involved in ecology than men, another study (2) conducted in 11 industrialised countries showed that women are more concerned about environmental issues and that a major difference between men and women is their willingness to take action against climate change. However, a final study (3) found that in 2010, women in the US had less scientific knowledge than men on the subject.
 
@@ -12,6 +13,9 @@ Therefore, the involvement of gender in ecology seems to differ from one field t
 - Study 2: [https://www.pewresearch.org/fact-tank/2015/12/02/women-more-than-men-say-climate-change-will-harm-them-personally/](https://www.pewresearch.org/fact-tank/2015/12/02/women-more-than-men-say-climate-change-will-harm-them-personally/) and [https://www.weforum.org/agenda/2015/12/climate-friendly-men-or-women/](https://www.weforum.org/agenda/2015/12/climate-friendly-men-or-women/)
 
 - Study 3: [https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/](https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/)
+
+## Do you really want to know more about the climate change? 
+If you are really interested in our ADAdventure, don't wait, run and to visit our site ▶️ [Who does really care about climate change ?](https://phictl.github.io/Panda-final-project/).
 
 ### Project structure:
 
@@ -61,4 +65,7 @@ Our goal is first to explore the topics discussed by each speaker in the environ
 #### Word analysis, defining communication tools for each gender
 
   A first method to use is the word frequency analysis. We will yield the most used verbs/nouns/pronouns for each gender or each subtopics. For each of those words, we could go a step further and use bi-grams to visualize how words are connected. Finally, we can run a general sentiment analysis per quote. Python provides a handy toolkit of Natural Language Processing to perform all these tasks, namely `nltk`.
+  
+### Contribution of the project
+Each member of the Panda 🐼 team, consisting of Philippine des Courtils, Blanche Brognart, Alix Louvet and Stella Petronio contributed and helped to find an answer to each research question using the methods listed above.
 
