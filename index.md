@@ -3,10 +3,10 @@
 
 ## Introduction
 
-<center>Centered text</center>
+
 
 Dear ADAdventurer, 
-
+<center>
 We welcome you onboard a datatrip throughout ecology, environment and climate change. During this journey, you'll be following men and women speakers from a bunch of English newspapers and websites, from 2015 to 2020. 
 
 Before diving in, let's pause for a second. Why did we join this ADAdventure ? It comes from some personal observations, that you might share, or not ! People around us, and more especially students, tend to feel more or less concerned and to involve themselves in a different way, regarding ecology and environment. Indeed, the proportion of women commited into reducing their wastes, buying second hand or avoiding meat seemed quite high to us. So we decided to read about it. A [study](https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044) from Sweden suggested than men tend to have a larger carbon footprint. On the other hand, from studies( [here](https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044) and [there](https://www.weforum.org/agenda/2015/12/climate-friendly-men-or-women/)) conducted in some of the industrialised countries came the conclusion that women tend to be more concerned about those environmental issues. Indeed, they make a big part into daily life tasks and show more willingness to take action against climate change. The [United Nation Development Program](https://www.undp.org/blog/climate-change-isnt-gender-neutral-climate-action-shouldnt-be-either?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQiA5OuNBhCRARIsACgaiqWJC_ANIcSFrJsHJ0c4TsNzz8cJAr3BkpdXir5XwvbpEqlVf4n593UaAofaEALw_wcB) highlights the fact that women tend to be more impacted by global warming consequences. However, a last [article](https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/) reported that even if women feeled concerned, they showed less scientific knowledge that men.
@@ -17,7 +17,7 @@ Can we still find some clues from these quotes, supporting the hypothesis that e
 _Side notes : we performed our analysis with binary gender (male or female) only for the sake of simplicity_.
 
 And now, let's jump in !
-
+</center>
 
 ## Our storyteller
 ### Quotebank processed dataset
@@ -41,7 +41,7 @@ But aren't you curious to know more about the people who have received the most 
 
 {% include most_famous.html %}
 
-side note: The popularity of a person is defined as the number of times their quotes have been republished, the greater the number, the more popular the person.
+_side note: The popularity of a person is defined as the number of times their quotes have been republished, the greater the number, the more popular the person.
 
 Starting with the men, a rather interesting observation can be made. Among the 30 most famous men, only one of them (who corresponds to 3% of the sample) is not a politician: Pope Francis. He is the third most famous speaker. 
 
