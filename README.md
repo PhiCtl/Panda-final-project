@@ -17,7 +17,7 @@ Therefore, the involvement of gender in ecology seems to differ from one field t
 ## Do you really want to know more about the climate change? 
 If you are really interested in our ADAdventure, don't wait, run and to visit our site ▶️ [Who does really care about climate change ?](https://phictl.github.io/Panda-final-project/).
 
-### Project structure:
+## Project structure:
 
 ```bash
 .
@@ -26,7 +26,7 @@ If you are really interested in our ADAdventure, don't wait, run and to visit ou
 └── README.md
 ```
 
-### Research questions:
+## Research questions:
 The goal is to analyse our dataset in order to answer the following research questions: 
 
 1. How has the topic of ecology evolved from 2015 to 2020? We want to underline the evolution of the theme of ecology within these 5 years. Furthermore, we want to see a change on the topic of ecology due to the awareness of individuals in recent years.
@@ -35,19 +35,19 @@ The goal is to analyse our dataset in order to answer the following research que
 4. Focusing on the topic of ecology, do men and women share the same communication tools? Which types of words are used most by men and which by women (for example, we want to study: verbs, adjectives, pronouns, adverbs, ...)?
 5. Which hypotheses can we make explaining the observations of the previous questions? (for example: women speakers are more involved in ecology of the "daily life" because they are more inolved than men in the housework).
 
-### Additional dataset: 
+## Additional dataset: 
 Additionally, we used the _speakers_attributes.parquet_ metadata files extracted from Wikipedia, as suggested in the project description. We simply filtered out all the speakers whose gender wasn’t either binary male or binary female, since the other genders amount to less than 1%. Finally, we merged that dataset with our filtered and cleaned quotes dataset.
 
-### Methods
+## Methods
 
-#### Ecology related quotes selection
+### Ecology related quotes selection
 To select the quotes linked to ecology for our dataset, we perform a "lexical field" analysis as mentionned. We process as following to construct our dataset:
 
 → First we define an ecology lexical field in order to select all article titles of our interest.
 
 → Then we take all the quotations found in these articles. Therefore, this constitutes our dataset.
 
-#### Some statistics
+### Some statistics
     
 As described in our research questions, the first part of the project is to extract some statistical conclusions on our dataset to explore the distribution of women and men speaking about ecology (question 1 and 2) such as: 
 
@@ -57,15 +57,15 @@ As described in our research questions, the first part of the project is to extr
 
 Furthermore, we have done some statitics to underline the topic evolution among all the years taking into consideration. 
     
-#### Subtopic selection
+### Subtopic selection
 
  In order to define different subfields of ecology and then try to detect which of them is most attributed to male speakers and which are most attributed to female speakers, we use two models to cluster our quotes into topics, namely Top2Vec and LDA. Each technique is rather used in large document topic modelling, but it works quite well in our setting (small text, namely quotations). For a more short text topic modelling approach, we also explored GSDMM, which is essentially a modified version of the LDA algorithm, but we decide to focus on LDA and Top2Vec to get each quote assigned with more than one topic.
 Our goal is first to explore the topics discussed by each speaker in the environmental field, across time and gender. Then we aimed at detecting whether the quote was uttered by a male or a female based on the topic the quote was assigned to.
   
-#### Word analysis, defining communication tools for each gender
+### Word analysis, defining communication tools for each gender
 
   A first method to use is the word frequency analysis. We will yield the most used verbs/nouns/pronouns for each gender or each subtopics. For each of those words, we could go a step further and use bi-grams to visualize how words are connected. Finally, we can run a general sentiment analysis per quote. Python provides a handy toolkit of Natural Language Processing to perform all these tasks, namely `nltk`.
   
-### Contribution of the project
+## Contribution of the project
 Each member of the Panda 🐼 team, consisting of Philippine des Courtils, Blanche Brognart, Alix Louvet and Stella Petronio contributed and helped to find an answer to each research question using the methods listed above.
 
