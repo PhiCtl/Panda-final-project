@@ -142,7 +142,7 @@ _TODO : conclude here_
 
 ## Sentiment analysis of quotations
 {% include quotations_sentiment_all.html %}
-{% include quotations_sentiment_all.html %}
+{% include quotations_density.html %}
 {% include evolutions_scores.html %}
 {% include scorennp.html %}
 
