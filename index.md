@@ -544,10 +544,10 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
   <th> Petronio Stella    </th>
  </tr>
  <tr>
-  <td> <img src="_includes/photo.jpg" alt="Trulli"> </td>
-  <td> <img src="_includes/Philippine.jpg" alt="Trulli"> </td>
-  <td> <img src="_includes/WhatsApp Image 2021-12-17 at 15.05.58.jpeg"> </td>
-  <td> <img src="_includes/CV2.jpg" alt="Trulli">  </td>
+  <td> <img src="assets/photo_blanche.jpg" alt="Trulli"> </td>
+  <td> <img src="assets/photo_phil.jpg" alt="Trulli"> </td>
+  <td> <img src="assets/photo_alix.jpg"> </td>
+  <td> <img src="assets/photo_stella.jpg" alt="Trulli">  </td>
  </tr>
 </table>
 
