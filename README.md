@@ -18,7 +18,7 @@ Therefore, the involvement of gender in ecology seems to differ from one field t
 ## Do you really want to know more about the climate change 🌳? 
 If you are really interested in our ADAdventure, don't wait, run and visit our site ▶️ [Who does really care about climate change ?](https://phictl.github.io/Panda-final-project/).
 
-## Project structure:
+## Project structure
 
 ```bash
 .
@@ -27,7 +27,7 @@ If you are really interested in our ADAdventure, don't wait, run and visit our s
 └── README.md
 ```
 
-## Research questions:
+## Research questions
 The goal is to analyse our dataset in order to answer the following research questions: 
 
 1. How has the topic of ecology evolved from 2015 to 2020? We want to underline the evolution of the theme of ecology within these 5 years. Furthermore, we want to see a change on the topic of ecology due to the awareness of individuals in recent years.
@@ -36,7 +36,7 @@ The goal is to analyse our dataset in order to answer the following research que
 4. Focusing on the topic of ecology, do men and women share the same communication tools? Which types of words are used most by men and which by women (for example, we want to study: verbs, adjectives, pronouns, adverbs, ...)?
 5. Which hypotheses can we make explaining the observations of the previous questions? (for example: women speakers are more involved in ecology of the "daily life" because they are more inolved than men in the housework).
 
-## Additional dataset: 
+## Additional dataset
 Additionally, we used the _speakers_attributes.parquet_ metadata files extracted from Wikipedia, as suggested in the project description. We simply filtered out all the speakers whose gender wasn’t either binary male or binary female, since the other genders amount to less than 1%. Finally, we merged that dataset with our filtered and cleaned quotes dataset.
 
 ## Methods
