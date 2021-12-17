@@ -10,7 +10,7 @@ div{
   width:100%
  }
 
-img { width:80%
+img { width:100%
  }
  
  td, th {
@@ -259,44 +259,30 @@ are much more pessimistic, and could present the disasters incurred by global wa
 At the fourth position, water related issues are raised, then come again some disasters and we end on the fith one with a more optimistic note, namely all the solutions that
 we have at our disposal. The sixth topic follows on the solutions, while the seventh brings forward recycling. The nineth points out pollution and polluters while the last one is more generally dealing with ecology.
 
-
-Top 10 topics...                     |  ...for all genders
-:-----------------------------------:|:--------------------------------------:
-![assets/0_wc.jpg](assets/0_wc.jpg)  |  ![assets/1_wc.jpg](assets/1_wc.jpg)
-:-----------------------------------:|:--------------------------------------:
-![assets/2_wc.jpg](assets/2_wc.jpg)  |  ![assets/3_wc.jpg](assets/3_wc.jpg)
-:-----------------------------------:|:--------------------------------------:
-![assets/4_wc.jpg](assets/4_wc.jpg)  |  ![assets/5_wc.jpg](assets/5_wc.jpg)
-:-----------------------------------:|:--------------------------------------:
-![assets/6_wc.jpg](assets/6_wc.jpg)  |  ![assets/7_wc.jpg](assets/7_wc.jpg)
-:-----------------------------------:|:--------------------------------------:
-![assets/8_wc.jpg](assets/8_wc.jpg)  |  ![assets/9_wc.jpg](assets/9_wc.jpg)
-
- 
   <table>
  <tr>
   <th> Top 10 topics...     </th>
   <th> ...for all genders </th>
  </tr>
  <tr>
-  <td> <img src="assets/0_wc.jpg" alt="Trulli" width="100" height="100"> </td>
-  <td> <img src="assets/1_wc.jpg" alt="Trulli" width="100" height="100">  </td>
+  <td> <img src="assets/0_wc.jpg" alt="Trulli" width="500" height="500"> </td>
+  <td> <img src="assets/1_wc.jpg" alt="Trulli" width="500" height="500">  </td>
  </tr>
  <tr>
-  <td> <img src="assets/2_wc.jpg" alt="Trulli" width="100" height="100">  </td>
-  <td> <img src="assets/3_wc.jpg" alt="Trulli" width="100" height="100"> </td>
+  <td> <img src="assets/2_wc.jpg" alt="Trulli" width="500" height="500">  </td>
+  <td> <img src="assets/3_wc.jpg" alt="Trulli" width="500" height="500"> </td>
  </tr>
  <tr>
-  <td> <img src="assets/4_wc.jpg" alt="Trulli" width="100" height="100">  </td>
-  <td> <img src="assets/5_wc.jpg" alt="Trulli" width="100" height="100"> </td>
+  <td> <img src="assets/4_wc.jpg" alt="Trulli" width="500" height="500">  </td>
+  <td> <img src="assets/5_wc.jpg" alt="Trulli" width="500" height="500"> </td>
  </tr>
  <tr>
-  <td> <img src="assets/6_wc.jpg" alt="Trulli" width="100" height="100">  </td>
-  <td> <img src="assets/7_wc.jpg" alt="Trulli" width="100" height="100"> </td>
+  <td> <img src="assets/6_wc.jpg" alt="Trulli" width="500" height="500">  </td>
+  <td> <img src="assets/7_wc.jpg" alt="Trulli" width="500" height="500"> </td>
  </tr>
  <tr>
-  <td> <img src="assets/8_wc.jpg" alt="Trulli" width="100" height="100">  </td>
-  <td> <img src="assets/9_wc.jpg" alt="Trulli" width="100" height="100"> </td>
+  <td> <img src="assets/8_wc.jpg" alt="Trulli" width="500" height="500">  </td>
+  <td> <img src="assets/9_wc.jpg" alt="Trulli" width="500" height="500"> </td>
  </tr>
 </table>
 
@@ -524,6 +510,26 @@ On the use of adverbs, it can be noted that the three most used by both genders 
  <h2> The pandas team 🐼  </h2>
  <img src="assets/verbs_freq.jpg" alt="Trulli">
  
+ <table>
+ <tr>
+  <th> Brognart Blanche </th>
+  <th> Descourtils Philippine     </th>
+  <th> Louvet Alix </th>
+  <th> Petronio Stella    </th>
+ </tr>
+ <tr>
+  <td> <img src="photo.jpg" alt="Trulli"> </td>
+  <td> <img src="photo.jpg" alt="Trulli"> </td>
+  <td> <img src="WhatsApp Image 2021-12-17 at 15.05.58.jpeg"> </td>
+  <td> <img src="CV2.jpg" alt="Trulli">  </td>
+ </tr>
+ <tr>
+  <th> The gégé </th>
+  <th> The denigrated     </th>
+  <th> The beauf </th>
+  <th> The covidée </th>
+ </tr>
+</table>
 
 <h3> Our data </h3>
 
