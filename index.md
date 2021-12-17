@@ -22,7 +22,7 @@ And now, let's jump in !
 
 Here is our raw storyteller ! From **21,470,292** quotes we extracted **335,250** quotes dealing with environment, so roughly **1.5 %**. Below we present the gender repartition per year on those quotes. Women tend to represent **one fifth** of the total number of speakers on the topic.
 {% include statistics_quotes.html %}
-_TODO : would be nice to add the same plot across all cleaned quotes_
+
 Let's go further and analyse who is taking the floor...
 
 ## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
@@ -46,43 +46,54 @@ We're reaching a cross road, and before following the path of topic analysis, le
 | Precision            | 0.561         | 0.565               |
 | Recall               | 0.485         | 0.564               |
 
- Given all the pieces of information coming from the words that we have at our disposal, across all quotes, we cannot make a very significative statement about the speaker gender. This can be explained by the following fact. Even if we artificially balanced the dataset, we have very few quotes attributed to women, and thus less diversity in the words. Therefore our classifiers weren't able to grasp a meaningful aspect linked to gender out of it. We can nevertheless explore how our more performant classifier made its choices, taking a look at each coefficient importance into the task of predicting whether the speaker is a woman or not. The more positive the coefficient, the more weight it gives towards predicting "womea", the more negative, the better it is to predict "man".
+ Given all the pieces of information coming from the words that we have at our disposal, across all quotes, we cannot make a very significative statement about the speaker gender. This can be explained by the following fact. Even if we artificially balanced the dataset, we have very few quotes attributed to women, and thus less diversity in the words. Therefore our classifiers weren't able to grasp a meaningful aspect linked to gender out of it. We can nevertheless explore how our more performant classifier made its choices, taking a look at each coefficient importance into the task of predicting whether the speaker is a woman or not. The more positive the coefficient, the more weight it gives towards predicting "woman", the more negative, the better it is to predict "man".
 
 {% include coefs_logistic_gender_prediction.html %}
 
 Two interesting facts can be highlighted there. First of all, the most prominent words are gender related, such as _girl_, _woman_, _guy_, or _husband_. Secondly, action verbs like _shall_, _execute_ and _operate_ are used to classify "man", while more diverse types of words are linked to predicting "woman". We managed to pick one interesting aspect from our guests !
 
+We decide to turn left, and discover the topics landscapes. Don't loose the track, and follow us !
+
 ### Where LDA comes into play
 
-Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed **248211 quotes**, among which we have **47374 women and 200837 men**. So **20%** (only...) of our guests are women, and the **80%** left are men. 
+Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed **248'211 quotes**, among which we have **47'374 women and 200'837 men**. So **20%** (only...) of our guests are women, and the **80%** left are men. 
 LDA managed to extract **7 topics** that are presented in details below :
 
 | Topic number | Topic main word | Second word       | Third word             | Fourth word      | Description interpretation |
 |--------------|-----------------|-------------------|------------------------|------------------|----------------------------|
-| 0            | 0.068*"climate" | 0.064*"change"    | 0.039*"climate_change" | 0.016*"emission" | climate change             |
-| 1            | 0.030*"people"  | 0.022*"want"      | 0.016*"need"           | 0.011*"way"      | action                     |
-| 2            | 0.028*"year"    | 0.028*"go"        | 0.022*"people"         | 0.021*"think"    | long term consequences     |
-| 3            | 0.025*"long"    | 0.018*"term"      | 0.018*"level"          | 0.013*"air"      | long term consequences     |
-| 4            | 0.014*"use"     | 0.011*"food"      | 0.011*"plant"          | 0.011*"year"     | resources                  |
-| 5            | 0.015*"work     | 0.013*"community" | 0.012*"new"            | 0.012*"help"     | solutions                  |
+| 3            | 0.068*"climate" | 0.064*"change"    | 0.039*"climate_change" | 0.016*"emission" | climate change             |
+| 2            | 0.030*"people"  | 0.022*"want"      | 0.016*"need"           | 0.011*"way"      | action                     |
+| 4            | 0.028*"year"    | 0.028*"go"        | 0.022*"people"         | 0.021*"think"    | long term consequences     |
+| 7            | 0.025*"long"    | 0.018*"term"      | 0.018*"level"          | 0.013*"air"      | long term consequences     |
+| 5            | 0.014*"use"     | 0.011*"food"      | 0.011*"plant"          | 0.011*"year"     | resources                  |
+| 1            | 0.015*"work     | 0.013*"community" | 0.012*"new"            | 0.012*"help"     | solutions                  |
 | 6            | 0.023*"water"   | 0.012*"feel"      | 0.010*"number"         | 0.009*"warming"  | resources                  |
 
 We can really explore each topic using pyLDAvis tool. We can manually extract the meaningful topics, and see how close the topics are (in the blob graph below). Moreover, each topic word is nicely detailed. 
+
+As a side note, the size of the bubble represents the relevance of the topic in the corpus. The associate words are displayed on the left. 
+The blue bars represent the overall frequency of each word in the corpus, while the red one the estimated frequency within the selected topic.
+The numbering corresponds to the topic importance as well.
+
+The three main topics are quite relevant for our analysis. We could describe the first one as the need to work together in order to bring sustainable solutions. 
+The second could deal with the urge to act. The third one clearly presents global warming stakes and impacts. The fourth could be about long term consequences, and could
+the seventh topic, the fifth about the waste management and the sixth about water. 
 
 {% include lda.html %}
 
 ### Can we infer the gender from the quote ? 
 
-As a starter, we'll have a look at how each topic evolved for each gender across years. 
+As a starter, we'll have a look at how each topic evolved for each gender across years. We'll omit the strange artefacts from 2016 in our analysis which are not representative. 
 
 {% include topic_evolution_men.html %}
+
 {% include topic_evolution_women.html %}
 
 The words refer to the first most meaningful word for each topic.
-We don't learn much from a gender-split analysis, but we can still observe that the topic repartition and evolution 
-is quite similar. "People" and "Work" topics seem quite popular among our speakers, and we see a small rise of "Climate" and "Year" topic towards the end of
-our studied period. 
-Let's see if logistic regression and random forest can bring us some more details about a gender difference. We took care of tuning random forest in order to select the best depth and number of estimators.  
+We don’t learn much from a gender-split analysis, but we can still observe that the topic repartition and evolution is quite similar. “People” and “Work” topics seem quite popular among our speakers, and we see a small rise of  “Climate” and “Year” topic towards the end of our studied period.
+
+Let's put on our hiking shoes, grab our camera and follow the track. Will logistic regression and random forest lead us to a clear gender distinction within topics ? We infer each quote topic multinomial distribution, and we write down the score for each topic to constitute our feature matrix. Then we make sure that we have 
+as many quotes from men than women speakers. Finally, we took care of tuning random forest in order to select the best depth and number of estimators.  
 
 |                      | Random Forest | Logistic regression |
 |----------------------|---------------|---------------------|
@@ -90,29 +101,49 @@ Let's see if logistic regression and random forest can bring us some more detail
 | Precision            | 0.741         | 0.524               |
 | Recall               | 0.747         | 0.463               |
 
-Random Forest performs as expected quite well, but the analysis of feature importance doesn't bring us much. Indeed, each feature seems to contribute equally to the decision made. 
+Random Forest is quite good as catching the non linear relationships between features, and it might be a reason why it performed quite well for this task, 
+compared to good old logistic regression. However, the feature importance analysis doesn't bring us much about the topic relevance for predicting the speaker gender.
 
 {% include random_forest_feature_importance.html %}
 
-### Top2Vec
+We reached a summit but the view from there is a bit disappointed... There is a lot of fog. Let's go through the pass and down again in the next valley...
 
-We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. _TODO : add comment on the method and on the setup_
+### The path leads to Top2Vec
 
-{% include topic_distrib_all_genders.html %}
+We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. Top2Vec provides meaningful embeddings for each of our quotes. We end up with a high dimensional vector space, 
+from which we want to extract clusters and their centroid. Then, Top2Vec makes use of UMAP for dimensionality reduction, and finally applies HDBSCAN for clustering. 
+Each topic vector is then computed as the centroid of the found clusters. 
 
-_TODO: comment on the distribution and do plot again. Comment on the raised topics and compare them to 7 topics above._
+
+We look up to the sky and here are the top 10 main topics in the clouds. The first one deals with hope and solutions, the second and third ones 
+are much more pessimistic, and could present the disasters incurred by global warming along with the scarceness of the measures taken so far to prevent them. 
+At the fourth position, water related issues are raised, then come again some disasters and we end on the fith one with a more optimistic note, namely all the solutions that
+we have at our disposal. The sixth topic follows on the solutions, while the seventh brings forward recycling. The nineth points out pollution and polluters while the last one is more generally dealing with ecology.
 
 
-Top 6 topics...                                    |  ...for all genders
-
+Top 10 topics...                     |  ...for all genders
+:-----------------------------------:|:--------------------------------------:
 ![assets/0_wc.jpg](assets/0_wc.jpg)  |  ![assets/1_wc.jpg](assets/1_wc.jpg)
 :-----------------------------------:|:--------------------------------------:
 ![assets/2_wc.jpg](assets/2_wc.jpg)  |  ![assets/3_wc.jpg](assets/3_wc.jpg)
 :-----------------------------------:|:--------------------------------------:
-![assets/4_wc.jpg](assets/4_wc.jpg)  |  ![assets/5_wc.jpg](_includes/5_wc.jpg)
+![assets/4_wc.jpg](assets/4_wc.jpg)  |  ![assets/5_wc.jpg](assets/5_wc.jpg)
+:-----------------------------------:|:--------------------------------------:
+![assets/6_wc.jpg](assets/6_wc.jpg)  |  ![assets/7_wc.jpg](assets/7_wc.jpg)
+:-----------------------------------:|:--------------------------------------:
+![assets/8_wc.jpg](assets/8_wc.jpg)  |  ![assets/9_wc.jpg](assets/9_wc.jpg)
 
 
-_TODO : set up for test and comment on the results_
+Below you can explore and compare the top 20 topics brought by our speakers. Each topic name refers to the most weighted word in the given topic. Epa stands for the US Environmental
+Protection Agency and iot for the Internet of Things.
+
+{% include topic_distrib_all_genders.html %}
+
+Let's climb again, with our two mountain guides, Logistic Regression and Random Forest. We took the same number of quotes for men and women speakers
+and we infer the top 20 topics for each quote. And here are the results ! We reached a new summit, and the clouds are starting to make way for the sunshine. 
+We reached almost as good results as from word only predictions. Dear guest speaker, tell me what you are talking about and I can predict with 56% of chance whether you're
+a man or a woman. Well, that is not amazing yet... 
+
 
 |                      | Random Forest | Logistic regression |
 |----------------------|---------------|---------------------|
@@ -120,25 +151,53 @@ _TODO : set up for test and comment on the results_
 | Precision            | 0.557         | 0.56                |
 | Recall               | 0.488         | 0.541               |
 
-_TODO : comment on the top features, compare results to word based prediction and features_
+
+Let's dwell for a second anyway, grab a pair of binoculars somewhere and inspect our logistic regression coefficients.
+Again, we can find some similarities with the word only analysis from a few valleys ago, and it's quite interesting. Climate topics are pushed into the background, and more gender related
+topics are brought to the foreground. Again, the most useful coefficient for predicting whether the speaker is a woman or not is simply the topic... "women" ! Some topics are very
+clichées, such as "fashion" for women, or "gun", "markets" and "aviation" for men. Interestingly, more environment related topics are attributed to women, given
+the topic keywords, but the classifier does not seem to base its main decisions on that. 
+
 
 {% include coefs_logistic_gender_topic_prediction_top2vec.html %}
 
 ### In the foreground for climate and environment
 
-_TODO : present speakers_
+We can therefore try to be more specific and look at the main spokespersons for climate. At the beginning of our journey, we met the three main speakers for each gender.
+Let's have a look at what they actually say and train a classifier to decide, from a mix of their quotes, whether the speaker is a man or a woman.
+
+We'll walk part of the way with Hillary Clinton, Greta Thunberg and Angela Merkel. Here are the two main topics they brought into light about environment.
+Unfortunately, we don't have many quotes available, so our algorithm was only able to infer two of three topics for each. We can nevertheless observe the emphasis
+Greta puts on the "crisis" state we're in and the need to "act".
 
 ![assets/Word_clouds_females.jpg](assets/Word_clouds_females.jpg)
 
+Now, we'll also join Donald Trump, Pope Francis and Barack Obama. Here are their three main contributions to our topics. Those are quite precise and reveal a lot
+about their speaker occupation. Have you already spot the "hoax" word into Trump's word clouds... ?
+
 ![assets/Word_clouds_males.jpg](assets/Word_clouds_males.jpg)
 
-_TODO : present test and comment on results and coefficients_
+For a last time, we predict with logistic regression and random forest classifier.
+
+
+|                      | Random Forest | Logistic regression |
+|----------------------|---------------|---------------------|
+| Accuracy on test set | 0.883         | 0.686               |
+| Precision            | 0.938         | 0.258               |
+| Recall               | 0.15          | 0.697               |
+
+Our dataset was quite imbalanced this time, and even if we have a higher accuracy for random forest classifier, it is not meaningful since it wasn't able to catch most of 
+the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly **95%** of all women and men speakers, which is quite nice ! 
 
 ![assets/logistic_regression_confusion_matrix_famous_speakers.jpg](assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
 
+
+Let's end up this little tour with a closer analysis of the logistic regression coefficients. Environmental topics are balanced between both gender, but we can still notice
+that women tend to underline more the "crisis" and the "community" aspects. Note the prevalence of the topics "us" and "ourselves". 
+
 {% include coefs_logistic_gender_topic_prediction_famous_speakers.html %}
 
-_TODO : conclude here_
+This second trip has come to an end and we come back to our starting point with some interesting knowledge. 
 
 ## Sentiment analysis of quotations
 {% include quotations_sentiment_all.html %}
