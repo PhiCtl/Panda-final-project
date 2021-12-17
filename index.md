@@ -28,7 +28,7 @@ Let's go further and analyse who is taking the floor...
 ## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
 
 *TODO Alix plot* + comments
-Not finished, I will add comments!  
+Not finished, I will add comments!  _Alix I removed your plots for the moment because it raised some build errors, and it didn't print on the website_
 
 Who are the 30 most famous speakers over the five years? By famous we meand the number of occurences the quote occurs in the articles. 
 
@@ -96,22 +96,49 @@ Random Forest performs as expected quite well, but the analysis of feature impor
 
 ### Top2Vec
 
-We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. 
+We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. _TODO : add comment on the method and on the setup_
+
 {% include topic_distrib_all_genders.html %}
 
+_TODO: comment on the distribution and do plot again. Comment on the raised topics and compare them to 7 topics above._
 
-Top 6 topics...                             |  ...for all genders
 
-![https://phictl.github.io/Panda-final-project/assets/0_wc.jpg](https://phictl.github.io/Panda-final-project/assets/0_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/assets/1_wc.jpg](https://phictl.github.io/Panda-final-project/assets/1_wc.jpg)
-:-----------------------------------------:|:-------------------------------------------:
-![https://phictl.github.io/Panda-final-project/assets/2_wc.jpg](https://phictl.github.io/Panda-final-project/assets/2_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/assets/3_wc.jpg](https://phictl.github.io/Panda-final-project/assets/3_wc.jpg)
-:-----------------------------------------:|:-------------------------------------------:
-![https://phictl.github.io/Panda-final-project/assets/4_wc.jpg](https://phictl.github.io/Panda-final-project/assets/4_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/assets/5_wc.jpg](https://phictl.github.io/Panda-final-project/assets/5_wc.jpg)
+Top 6 topics...                                    |  ...for all genders
 
-Main speakers
-results and comments
+![0_wc.jpg](/Panda-final-project/assets/0_wc.jpg)  |  ![1_wc.jpg](/Panda-final-project/assets/1_wc.jpg)
+:-------------------------------------------------:|:--------------------------------------------------:
+![2_wc.jpg](/Panda-final-project/assets/2_wc.jpg)  |  ![3_wc.jpg](/Panda-final-project/assets/3_wc.jpg)
+:-------------------------------------------------:|:--------------------------------------------------:
+![4_wc.jpg](/Panda-final-project/assets/4_wc.jpg)  |  ![5_wc.jpg](/Panda-final-project/assets/5_wc.jpg)
 
-kkkk
+
+_TODO : set up for test and comment on the results_
+
+|                      | Random Forest | Logistic regression |
+|----------------------|---------------|---------------------|
+| Accuracy on test set | 0.562         | 0.559               |
+| Precision            | 0.557         | 0.56                |
+| Recall               | 0.488         | 0.541               |
+
+_TODO : comment on the top features, compare results to word based prediction and features_
+
+{% include coefs_logistic_gender_topic_prediction_top2vec.html %}
+
+### In the foreground for climate and environment
+
+_TODO : present speakers_
+
+![WC_Women](/Panda-final-project/assets/Word_clouds_females.jpg)
+
+![WC_Men](/Panda-final-project/assets/Word_clouds_males.jpg)
+
+_TODO : present test and comment on results and coefficients_
+
+![Confusion_matrix](/Panda-final-project/assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
+
+{% include coefs_logistic_gender_topic_prediction_famous_speakers.html %}
+
+_TODO : conclude here_
 
 ## Word Frequency Analysis 
 
