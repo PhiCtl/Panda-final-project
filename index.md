@@ -8,14 +8,15 @@ div{
 
 
  
- <h2> 
-# Who does really care about climate change ?
+ <h1>  Who does really care about climate change ?  </h1>
+  
 ## A gender driven journey throughout environment related topics in the media
- </h2>
+ <h2> A gender driven journey throughout environment related topics in the media </h2>
  </head>
  <body>
   
 ## Introduction
+  <h2> Introduction </h2>
 
 <div> 
 Dear ADAdventurer, 
@@ -23,7 +24,7 @@ We welcome you onboard a datatrip throughout ecology, environment and climate ch
 
 Before diving in, let's pause for a second. Why did we join this ADAdventure ? It comes from some personal observations, that you might share, or not ! People around us, and more especially students, tend to feel more or less concerned and to involve themselves in a different way, regarding ecology and environment. Indeed, the proportion of women commited into reducing their wastes, buying second hand or avoiding meat seemed quite high to us. So we decided to read about it.   
 
- <a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044">A study</a> from Sweden suggested than men tend to have a larger carbon footprint. On the other hand, from studies (<a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044">here</a> and <a href="https://www.weforum.org/agenda/2015/12/climate-friendly-men-or-women/">there</a>) conducted in some of the industrialised countries came the conclusion that women tend to be more concerned about those environmental issues. Indeed, they make a big part into daily life tasks and show more willingness to take action against climate change. The <a href="https://www.undp.org/blog/climate-change-isnt-gender-neutral-climate-action-shouldnt-be-either?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQiA5OuNBhCRARIsACgaiqWJC_ANIcSFrJsHJ0c4TsNzz8cJAr3BkpdXir5XwvbpEqlVf4n593UaAofaEALw_wcB">United Nation Development Program</a> highlights the fact that women tend to be more impacted by global warming consequences. However, a last <a href="https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/">there</a>) reported that even if women feeled concerned, they showed less scientific knowledge that men.
+ <a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044">A study</a> from Sweden suggested than men tend to have a larger carbon footprint. On the other hand, from studies (<a href="https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044">here</a> and <a href="https://www.weforum.org/agenda/2015/12/climate-friendly-men-or-women/">there</a>) conducted in some of the industrialised countries came the conclusion that women tend to be more concerned about those environmental issues. Indeed, they make a big part into daily life tasks and show more willingness to take action against climate change. The <a href="https://www.undp.org/blog/climate-change-isnt-gender-neutral-climate-action-shouldnt-be-either?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQiA5OuNBhCRARIsACgaiqWJC_ANIcSFrJsHJ0c4TsNzz8cJAr3BkpdXir5XwvbpEqlVf4n593UaAofaEALw_wcB">United Nation Development Program</a> highlights the fact that women tend to be more impacted by global warming consequences. However, a last <a href="https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/">there</a>) reported that even if women feeled concerned, they showed less scientific knowledge that men. </p>
 
 Therefore, men and women are expected to address those topics through different angles and with different rethoric tools. This has been highlighted several times when studying social media data such as reddit or tweet posts. However, here, we're dealing with reported speech. Indeed, what a quoted person said has been intentionnally selected by the journalist, taken out of context somehow and emphasized. 
 Can we still find some clues from these quotes, supporting the hypothesis that each speaker approaches ecology and other environmental issues depending on his or her gender ?
