@@ -566,17 +566,13 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
  <tr>
   <th> Brognart Blanche </th>
   <th> Descourtils Philippine     </th>
+  <th> Louvet Alix </th>
+  <th> Petronio Stella    </th>
  </tr>
  <tr>
   <td> <img src="assets/photo_blanche.jpg" > </td>
   <td> <img src="assets/photo_phil.jpeg" > </td>
- </tr>
-  <tr>
-  <th> Louvet Alix </th>
-  <th> Petronio Stella    </th>
- </tr>
-  <tr>
-  <td> <img src="assets/photo_alix.jpeg" > </td>
+   <td> <img src="assets/photo_alix.jpeg" > </td>
   <td> <img src="assets/photo_stella.jpg" >  </td>
  </tr>
 </table>
