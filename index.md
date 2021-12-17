@@ -422,9 +422,9 @@ We therefore looked to see if there were differences between positive and negati
 
 <table class="center">
  <tr>
-  <th> Examples quotations with negative score </th>
-  <th> Score </th>
   <th> Examples quotations with positive score </th>
+  <th> Score </th>
+  <th> Examples quotations with negative score </th>
   <th> Score </th>
  </tr>
  <tr>
