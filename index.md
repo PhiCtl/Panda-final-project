@@ -6,16 +6,12 @@ div{
  text-align: justify}
 </style>
 
-
- 
- <h1>  Who does really care about climate change ?  </h1>
+ <title>  Who does really care about climate change ?  </title>
   
-## A gender driven journey throughout environment related topics in the media
- <h2> A gender driven journey throughout environment related topics in the media </h2>
+ <h1> A gender driven journey throughout environment related topics in the media </h1>
  </head>
  <body>
   
-## Introduction
   <h2> Introduction </h2>
 
 <div> 
@@ -37,8 +33,8 @@ And now, let's jump in !
 
  
  
-## Our storyteller
-### Quotebank processed dataset
+<h2> Our storyteller </h2>
+<h3> Quotebank processed dataset </h3>
 
 Here is our raw storyteller ! From **21,470,292** quotes we extracted **335,250** quotes dealing with environment, so roughly **1.5 %**. Below we present the gender repartition per year on those quotes. Women tend to represent **one fifth** of the total number of speakers on the topic.
 
@@ -46,15 +42,15 @@ Here is our raw storyteller ! From **21,470,292** quotes we extracted **335,250*
 
 Let's go further and analyse who is taking the floor...
 
-## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
+<h2> How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ? </h2>
 
-## Evolution of the proportion of men and women speakers 
+<h3> Evolution of the proportion of men and women speakers </h3>
  
 Let's start our journey by comparing the proportion of men and women speakers on the ecology topic between 2015 and 2020. The first obvious thing, but unfortunately not surprising, is that there are many more collected quotes from men than from women (around 80% and 20% respectively). However, the good news is that over the years there has been a slow evolution reversing this trend. Indeed, since 2018, the proportion of women talking about ecology is increasingly important!
 
 {% include proportion_genders.html %}
 
-## Who are the most famous speakers ? 
+<h3> Who are the most famous speakers ? </h3>
  
 But aren't you curious to know more about the people who have received the most media attention on the subject of ecology? And here it is! The following barplot presents the 30 most famous speakers reported, and it appears that Donald Trump is by far the most popular on environmental issues, followed by Barack Obama and Pope Francis. In line with the previous observation, less than 20% are women. But among the most famous speakers, do men and women speakers share the same kind of profile? To make the comparison let’s analyse each gender separately. 
 
@@ -77,9 +73,9 @@ Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which c
 
 {% include evolution_famous.html %}
 
-## Show me what you're talking about and I'll tell you who you are
+<h2> Show me what you're talking about and I'll tell you who you are </h2>
 
-### Topics broken down to words
+<h3> Topics broken down to words </h3>
  
 We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set. </p> 
 
@@ -99,7 +95,7 @@ Two interesting facts can be highlighted there. First of all, the most prominent
 
 We decide to turn left, and discover the topics landscapes. Don't loose the track, and follow us !
 
-### Where LDA comes into play
+<h3> Where LDA comes into play </h3>
 
 Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed **248'211 quotes**, among which we have **47'374 women and 200'837 men**. So **20%** (only...) of our guests are women, and the **80%** left are men. 
 LDA managed to extract **7 topics** that are presented in details below : </p>  
@@ -127,7 +123,7 @@ the seventh topic, the fifth about the waste management and the sixth about wate
 
 {% include lda.html %}
 
-### Can we infer the gender from the quote ? 
+<h3> Can we infer the gender from the quote ?  </h3>
 
 As a starter, we'll have a look at how each topic evolved for each gender across years. We'll omit the strange artefacts from 2016 in our analysis which are not representative. 
  
@@ -155,12 +151,11 @@ compared to good old logistic regression. However, the feature importance analys
 
 We reached a summit but the view from there is a bit disappointed... There is a lot of fog. Let's go through the pass and down again in the next valley...
 
-### The path leads to Top2Vec
+<h3> The path leads to Top2Vec </h3>
 
 We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. Top2Vec provides meaningful embeddings for each of our quotes. We end up with a high dimensional vector space, 
 from which we want to extract clusters and their centroid. Then, Top2Vec makes use of UMAP for dimensionality reduction, and finally applies HDBSCAN for clustering. 
 Each topic vector is then computed as the centroid of the found clusters. 
-
 
 We look up to the sky and here are the top 10 main topics in the clouds. The first one deals with hope and solutions, the second and third ones 
 are much more pessimistic, and could present the disasters incurred by global warming along with the scarceness of the measures taken so far to prevent them. 
@@ -208,7 +203,7 @@ the topic keywords, but the classifier does not seem to base its main decisions 
 
 {% include coefs_logistic_gender_topic_prediction_top2vec.html %}
 
-### In the foreground for climate and environment
+<h3> In the foreground for climate and environment </h3>
 
 We can therefore try to be more specific and look at the main spokespersons for climate. At the beginning of our journey, we met the three main speakers for each gender.
 Let's have a look at what they actually say and train a classifier to decide, from a mix of their quotes, whether the speaker is a man or a woman.
@@ -251,7 +246,7 @@ that women tend to underline more the "crisis" and the "community" aspects. Note
 
 This second trip has come to an end and we come back to our starting point with some interesting knowledge. 
 
-## Sentiment analysis of quotations
+<h2> Sentiment analysis of quotations </h2>
  
 Now let’s move on to the exploration of the difference between the sentimental score of the quotes between men and women. For this purpose we used the ntlk library. 
 
@@ -287,18 +282,18 @@ We can therefore suppose that the speakers moderate themselves more to express n
 
 However, it is important to note here that the database only lists quotes from speakers listed in newspapers, so these quotes do not represent everyone's sentences. The quotation of newspapers are therefore maybe biased. 
 
-## What are the words most used by males and females?
+<h2> What are the words most used by males and females? </h2>
 
 Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
 
-### Where and how WFA comes into play
+<h3> Where and how WFA comes into play </h3>
 
 We did a deep analysis to find out which are the most used words among the female and male speakers. We used a _Word Frequency Analysis_ tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. 
 
 For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the _word clouds_ visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of quotations, where the size of each word is proportional to the number of times it has been counted in the set of all quotations. These visualisations are interesting, and they can be a quick and direct way to give an overview of how our speakers are talking.
 
 
-#### Verbs
+<h4> Verbs </h4>
 
 Which _verbs_ are used most by men and which by women?
 
@@ -308,7 +303,7 @@ From the study of the verbs, it can be noticed that the three most used are _go_
   ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
 
 
-#### Nouns
+<h4> Nouns </h4>
 
 Which _nouns_ are used most by men and which by women?
 
@@ -319,7 +314,7 @@ Regarding the nouns, the most three used, for both gender, are _people_, _climat
   ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
 
 
-#### Adjectives
+<h4> Adjectives </h4>
 Which _adjectives_ are used most by men and which by women?
 
 {% include adj_freq.html %}
@@ -330,7 +325,7 @@ Under the study of the adjectives, it can be seen that the three most used are _
 
 
 
-#### Adverbs 
+<h4> Adverbs  </h4>
 
 Which _adverbs_ are used most by men and which by women?
 
@@ -342,13 +337,13 @@ On the use of adverbs, it can be noted that the three most used by both genders 
   ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 
 
-## Conclusion
+<h2> Conclusion </h2>
 
-## Appendix
+<h2> Appendix </h2>
 
-### Our data
+<h3> Our data </h3>
 
-### Our methods
+<h3> Our methods </h3>
  
 </div>
  </body>
