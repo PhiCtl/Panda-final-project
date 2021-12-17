@@ -533,8 +533,7 @@ Moreover, quotes were first extracted and processed by journalists to support a 
 In a nutshell, our road throughout those quotes sketched some gender trends and supported some of our hypotheses, and can be further refined with a speaker specific approach or taking into account much more context about the speaker and the media the quote comes from !
 
  <h2> The pandas team 🐼  </h2>
- <img src="assets/verbs_freq.jpg" alt="Trulli">
- 
+
  <table>
  <tr>
   <th> Brognart Blanche </th>
