@@ -498,8 +498,13 @@ Regarding the nouns, the most three used, for both gender, are <i>people, climat
  <br>
 
  <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="500">
+  
+ <tr>
+  <td> <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="300">  </td>
+ </tr>
  
 <h4> Adjectives </h4>
+ 
 Which <i>adjectives</i> are used most by men and which by women?
 
 {% include adj_freq.html %}
@@ -573,7 +578,7 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
   <td> <img src="assets/photo_blanche.jpg" > </td>
   <td> <img src="assets/photo_phil.jpeg" > </td>
    <td> <img src="assets/photo_alix.jpeg" > </td>
-  <td> <img src="assets/photo_stella.jpg" >  </td>
+  <td> <img src="assets/photo_stella.jpg" width="300" height="500" >  </td>
  </tr>
 </table>
 
