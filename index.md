@@ -139,18 +139,21 @@ For each study group of words considered (namely between verbs, nouns, adjective
 
 #### Verbs
 Which types of _verbs_ are used most by men and which by women?
+
 {% include verbs_freq.html %}
 
 ![_includes/verbs_freq.jpg](_includes/verbs_freq.jpg)
 
 #### Nouns
 Which types of _nouns_ are used most by men and which by women?
+
 {% include nouns_freq.html %}
 
 ![_includes/nouns_freq.jpg](_includes/verbs_freq.jpg)
 
 #### Adjectives
 Which types of _adjectives_ are used most by men and which by women?
+
 {% include adj_freq.html %}
 
 ![_includes/adj_freq.jpg](_includes/adj_freq.jpg)
