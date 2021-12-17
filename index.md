@@ -200,10 +200,26 @@ that women tend to underline more the "crisis" and the "community" aspects. Note
 This second trip has come to an end and we come back to our starting point with some interesting knowledge. 
 
 ## Sentiment analysis of quotations
+Now let’s move on to the exploration of the difference between the sentimental score of the quotes between men and women. For this purpose we used the ntlk library. 
+
+First let’s have a look at the distribution of the sentimental score of the quotes. We have a huge peak for neutral sentiment. Of all the quotations on ecology, we have ** 81663** that have a score of 0, i.e 27% of the total. But what does a score of 0 mean? It is for all the quotes that simply give a state, an information like for example "There are not only channel to us” or “less bleached than reefs further offshore”. 
+
 {% include quotations_sentiment_all.html %}
+
+So we looked at the differences between the two genders. We visualized the density between men and women of the sentimental score. In the plot we observe almost no difference between men and women. Moreover, by performing a t-test we do not obtain a significant difference between men and women. The p-value is equal to 0,99. 
+
 {% include quotations_density.html %}
-{% include evolutions_scores.html %}
+
+We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. 
+We can see that the positive quotes represent **half** of all quotes. And as seen previously, the proportion between men and women of positive and negative quotes is the same. 
 {% include scorennp.html %}
+
+To complete our study, we plotted the distribution of positive versus negative citations by making the absolute value of all negative scores. We thus observe in general more positive quotations than negative ones. But the most surprising thing is that we have a bigger difference for scores higher than 0,4. Thus for quotes with a score above 0.4, there are **2.4** times more positive quotes than negative ones, while for lower scores there are only **1.5** times more positive quotes. 
+
+We can therefore suppose that the speakers moderate themselves more to express negation. However ecology is a subject that worries a lot nowadays, the lexical fields of guilt and fear govern the discourses on this topic. This [study](https://journals.sagepub.com/doi/full/10.1177/0539018421996264) studied the emotions when talking about ecology and found that more negative emotions are expressed in this topic. Thus we have interesting and surprising results compared to what we had imagined. 
+However, it is important to note here that the database only lists quotes from speakers listed in newspapers, so these quotes do not represent everyone's sentences.
+{% include evolutions_scores.html %}
+
 
 ## What are the words most used by males and females?
 
