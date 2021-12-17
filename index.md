@@ -482,11 +482,11 @@ Which <i>verbs</i> are used most by men and which by women?
 
 {% include verbs_freq.html %}
 From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs <i>go</i> and <i>get</i> by male speakers than female spekers. 
- 
- <br>
 
- <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="300" height="500">
- 
+<tr>
+  <td> <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="400" height="400">  </td>
+</tr>
+
 <h4> Nouns </h4>
 
 Which <i>nouns</i> are used most by men and which by women?
@@ -494,14 +494,10 @@ Which <i>nouns</i> are used most by men and which by women?
 {% include nouns_freq.html %}
 
 Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
- 
- <br>
-
- <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="500">
   
- <tr>
-  <td> <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="300">  </td>
- </tr>
+<tr>
+  <td> <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="400" height="400">  </td>
+</tr>
  
 <h4> Adjectives </h4>
  
@@ -510,11 +506,11 @@ Which <i>adjectives</i> are used most by men and which by women?
 {% include adj_freq.html %}
 
 Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. 
- 
- <br>
 
- <img src="assets/adj_freq.jpg" alt="Trulli" class=center width="300" height="500">
-<br>
+<tr>
+  <td> <img src="assets/adj_freq.jpg" alt="Trulli" class=center width="400" height="400">  </td>
+</tr>
+ 
 <h4> Adverbs  </h4>
 
 Which <i>adverbs</i> are used most by men and which by women?
@@ -522,10 +518,10 @@ Which <i>adverbs</i> are used most by men and which by women?
 {% include adverbs_freq.html %}
 
 On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers. 
- 
- <br>
 
- <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="300" height="500">
+<tr>
+  <td> <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="400" height="400">  </td>
+</tr>
 
 <h2> Conclusion </h2>
  
@@ -576,9 +572,9 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
  </tr>
  <tr>
   <td> <img src="assets/photo_blanche.jpg" > </td>
-  <td> <img src="assets/photo_phil.jpeg" > </td>
+  <td> <img src="assets/photo_phil.jpeg" width="300" height="300"> </td>
    <td> <img src="assets/photo_alix.jpeg" > </td>
-  <td> <img src="assets/photo_stella.jpg" width="300" height="500" >  </td>
+  <td> <img src="assets/photo_stella.jpg" width="300" height="300" >  </td>
  </tr>
 </table>
 
