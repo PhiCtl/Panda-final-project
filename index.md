@@ -298,42 +298,52 @@ For each study group of words considered (namely between verbs, nouns, adjective
 Which _verbs_ are used most by men and which by women?
 
 {% include verbs_freq.html %}
-From the study of the verbs, it can be noticed that the three most used are _go_, _think_ and _need_. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
+From the study of the verbs, it can be noticed that the three most used are <p style="font-style: italic;">go, think</p> and <p style="font-style: italic;">need</p>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
   ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
 
-
+ _go_, _think_ and _need_
+ 
+ 
 <h4> Nouns </h4>
 
 Which _nouns_ are used most by men and which by women?
 
 {% include nouns_freq.html %}
 
-Regarding the nouns, the most three used, for both gender, are _people_, _climate_, _change_. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns _health_, _life_ and _science_ seem only used from female speakers. On the other hand, we observe that the nouns _level_, _carbon_, _business_ are only used from male speakers. 
+Regarding the nouns, the most three used, for both gender, are <p style="font-style: italic;">people, climate, change</p>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <p style="font-style: italic;">health, life</p> and <p style="font-style: italic;">science</p> seem only used from female speakers. On the other hand, we observe that the nouns <p style="font-style: italic;">level, carbon, business</p> are only used from male speakers. 
 
   ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
-
-
+ _people_, _climate_, _change_
+ _health_, _life_ and _science_
+ _level_, _carbon_, _business_
+ 
 <h4> Adjectives </h4>
 Which _adjectives_ are used most by men and which by women?
 
 {% include adj_freq.html %}
 
-Under the study of the adjectives, it can be seen that the three most used are _enviromental_, _good_ and _important_ for both gender. Furthermore, it can be noticed a greater use of the _global_ and _high_ adjectives from the side of the male speakers. 
+Under the study of the adjectives, it can be seen that the three most used are <p style="font-style: italic;">enviromental, good</p> and <p style="font-style: italic;">important</p> for both gender. Furthermore, it can be noticed a greater use of the <p style="font-style: italic;">global</p> and <p style="font-style: italic;">high</p> adjectives from the side of the male speakers. 
 
   ![assets/adj_freq.jpg](assets/adj_freq.jpg)
 
-
-
+_enviromental_, _good_ and _important_
+ _global_ and _high_
+ 
 <h4> Adverbs  </h4>
 
-Which _adverbs_ are used most by men and which by women?
-
+Which <p style="font-style: italic;">adverbs</p> are used most by men and which by women?
+ _adverbs_
+ 
 {% include adverbs_freq.html %}
 
-On the use of adverbs, it can be noted that the three most used by both genders are _forward_, _actutally_, and _away_ (with a majority from the female speakers), whereas _truly_, _hard_, _directly_, _exactly_, _way_ seem to be used only by male speakers and _well_, _likely_, _highly_, _increasingly_, _obviously_ only by female speakers.
-
-
+On the use of adverbs, it can be noted that the three most used by both genders are <p style="font-style: italic;">forward, actutally</p> and <p style="font-style: italic;">away</p> (with a majority from the female speakers), whereas <p style="font-style: italic;">truly, hard, directly, exactly, way</p> seem to be used only by male speakers and <p style="font-style: italic;">well, likely, highly, increasingly, obviously</p> only by female speakers.
+ 
+ 
+_forward_, _actutally_, _away_
+ _truly_, _hard_, _directly_, _exactly_, _way_
+ _well_, _likely_, _highly_, _increasingly_, _obviously_
+ 
   ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 
 
