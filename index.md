@@ -27,10 +27,34 @@ Let's go further and analyse who is taking the floor...
 
 ## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
 
-*TODO Alix plot* + comments
-Not finished, I will add comments!  _Alix I removed your plots for the moment because it raised some build errors, and it didn't print on the website_
+## Evolution of the proportion of men and women speakers 
 
-Who are the 30 most famous speakers over the five years? By famous we meand the number of occurences the quote occurs in the articles. 
+Let's start our journey by comparing the proportion of men and women speakers on the ecology topic between 2015 and 2020. The first obvious thing, but unfortunately not surprising, is that there are many more collected quotes from men than from women (around 80% and 20% respectively). However, the good news is that over the years there has been a slow evolution reversing this trend. Indeed, since 2018, the proportion of women talking about ecology is increasingly important!
+
+{% include proportion_genders.html %}
+
+## Who are the most famous speakers ? 
+
+But aren't you curious to know more about the people who have received the most media attention on the subject of ecology? And here it is! The following barplot presents the 30 most famous speakers reported, and it appears that Donald Trump is by far the most popular on environmental issues, followed by Barack Obama and Pope Francis. In line with the previous observation, less than 20% are women. But among the most famous speakers, do men and women speakers share the same kind of profile? To make the comparison let’s analyse each gender separately. 
+
+{% include most_famous.html %}
+
+side note: The popularity of a person is defined as the number of times their quotes have been republished, the greater the number, the more popular the person.
+
+Starting with the men, a rather interesting observation can be made. Among the 30 most famous men, only one of them (who corresponds to 3% of the sample) is not a politician: Pope Francis. He is the third most famous speaker. 
+
+{% include most_famous_men.html %}
+
+On the other hand, the profiles of the 30 most famous women are much more varied: only 60% of them are politicians (against 97% on the men’s side). There is also a very famous climate activist: Greta Thunberg (who represents 3% of the sample), two women are scientists specialized in environmental issues (6%) and the remaining 30% are public figures such as actresses, singers, writers, models etc... 
+
+Attention! This does not mean that men have less varied profiles than women, but only that among the 30 most famous for each gender, there are half as many politicians among women as among men. 
+
+{% include most_famous_women.html %}
+
+If we now restrict ourselves to the three most famous men and three most famous women, how did their media coverage evolve during the 5 years? First, concerning political figures, we notice that the evolution of their popularity over the years is strongly correlated with the important stages of their political life. For example, Barack Obama's popularity decreases with the years, which correspond to the end of his mandate. On the other hand, for Hilary Clinton and Donald Trump, popularity increases in 2015 and 2016, during the US presidential campaign. For Trump, a peak is reached at the beginning of his mandate in 2017 and then decreases from year to year, while for Clinton, as soon as the presidential elections are over, her popularity rating drops. 
+Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which corresponds to the year of the publication of "Laudato Si", his encyclical on ecology. It seems that Angela Merkel also had a popularity peak in 2017, the year of the COP23 in Bonn, Germany. Finally, the graph suggests that in 2019, Greta began to receive a lot of media attention, following its intervention at the COP24 in 2018. 
+
+{% include evolution_famous.html %}
 
 
 ## Show me what you're talking about and I'll tell you who you are
