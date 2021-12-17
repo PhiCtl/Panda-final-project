@@ -105,7 +105,7 @@ _TODO: comment on the distribution and do plot again. Comment on the raised topi
 
 Top 6 topics...                                    |  ...for all genders
 
-![0_wc.jpg](/Panda-final-project/assets/0_wc.jpg)  |  ![1_wc.jpg](/Panda-final-project/assets/1_wc.jpg)
+![/Panda-final-project/_includes/0_wc.jpg](/Panda-final-project/_includes/0_wc.jpg)  |  ![1_wc.jpg](1_wc.jpg)
 :-------------------------------------------------:|:--------------------------------------------------:
 ![2_wc.jpg](/Panda-final-project/assets/2_wc.jpg)  |  ![3_wc.jpg](/Panda-final-project/assets/3_wc.jpg)
 :-------------------------------------------------:|:--------------------------------------------------:
@@ -128,9 +128,9 @@ _TODO : comment on the top features, compare results to word based prediction an
 
 _TODO : present speakers_
 
-![/Panda-final-project/assets/Word_clouds_females.jpg](/Panda-final-project/assets/Word_clouds_females.jpg)
+![assets/Word_clouds_females.jpg](assets/Word_clouds_females.jpg)
 
-![/Panda-final-project/assets/Word_clouds_males.jpg](/Panda-final-project/assets/Word_clouds_males.jpg)
+![Word_clouds_males.jpg](Word_clouds_males.jpg)
 
 _TODO : present test and comment on results and coefficients_
 
