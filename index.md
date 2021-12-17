@@ -130,11 +130,22 @@ results and comments
 
 ## What are the words most used by males and females?
 
-We did a deep analysis to find out which are the most used words among the female and male speakers. Precisely, we decided to focus on the study of verbs, nouns, adverbs, adjectives and the results obtained are reported below.
+Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
 
 ### Where and how WFA comes into play
+We did a deep analysis to find out which are the most used words among the female and male speakers. We used a Word Frequency Analysis tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. The results obtained are reported below. 
 
+#### The 30 most used verbs between males and females
 {% include verbs_freq.html %}
+
+#### The 30 most used nouns between males and females
+{% include nouns_freq.html %}
+
+#### The 30 most used adjectives between males and females
+{% include adj_freq.html %}
+
+#### The 30 most used adverbs between males and females
+{% include adverbs_freq.html %}
 
 ## Conclusion
 
