@@ -29,10 +29,6 @@ Let's go further and analyse who is taking the floor...
 
 *TODO Alix plot* + comments
 Not finished, I will add comments!  
-Evolution of the proportion of men and women speakers over the five years
-
-{% include evolution_prop_men_women.html %}
-
 
 Who are the 30 most famous speakers over the five years? By famous we meand the number of occurences the quote occurs in the articles. 
 
@@ -106,11 +102,11 @@ We'll turn to a more powerful tool to explore topics brought by the speakers, na
 
 Top 6 topics...                             |  ...for all genders
 
-![https://phictl.github.io/Panda-final-project/_includes/0_wc.jpg](https://phictl.github.io/Panda-final-project/_includes/0_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/_includes/1_wc.jpg](https://phictl.github.io/Panda-final-project/_includes/1_wc.jpg)
+![https://phictl.github.io/Panda-final-project/assets/0_wc.jpg](https://phictl.github.io/Panda-final-project/assets/0_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/assets/1_wc.jpg](https://phictl.github.io/Panda-final-project/assets/1_wc.jpg)
 :-----------------------------------------:|:-------------------------------------------:
-![https://phictl.github.io/Panda-final-project/_includes/2_wc.jpg](https://phictl.github.io/Panda-final-project/_includes/2_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/_includes/3_wc.jpg](https://phictl.github.io/Panda-final-project/_includes/3_wc.jpg)
+![https://phictl.github.io/Panda-final-project/assets/2_wc.jpg](https://phictl.github.io/Panda-final-project/assets/2_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/assets/3_wc.jpg](https://phictl.github.io/Panda-final-project/assets/3_wc.jpg)
 :-----------------------------------------:|:-------------------------------------------:
-![https://phictl.github.io/Panda-final-project/_includes/4_wc.jpg](https://phictl.github.io/Panda-final-project/_includes/4_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/_includes/5_wc.jpg](https://phictl.github.io/Panda-final-project/_includes/5_wc.jpg)
+![https://phictl.github.io/Panda-final-project/assets/4_wc.jpg](https://phictl.github.io/Panda-final-project/assets/4_wc.jpg)  |  ![https://phictl.github.io/Panda-final-project/assets/5_wc.jpg](https://phictl.github.io/Panda-final-project/assets/5_wc.jpg)
 
 Main speakers
 results and comments
