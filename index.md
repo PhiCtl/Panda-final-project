@@ -133,19 +133,27 @@ results and comments
 Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
 
 ### Where and how WFA comes into play
-We did a deep analysis to find out which are the most used words among the female and male speakers. We used a Word Frequency Analysis tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. The results obtained are reported below. 
+We did a deep analysis to find out which are the most used words among the female and male speakers. We used a _Word Frequency Analysis_ tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. The results obtained are reported below. 
 
-#### The 30 most used verbs between males and females
+For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the _word clouds_ visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of text, where the size of each word is proportional to the number of times it has been counted in the quotations. These visualisations are interesting, and they can be a quick way to give an overview of how our speakers are talking.
+
+#### Verbs
 {% include verbs_freq.html %}
 
-#### The 30 most used nouns between males and females
+![_includes/verbs_freq.jpg](_includes/verbs_freq.jpg)
+
+#### Nouns
 {% include nouns_freq.html %}
 
-#### The 30 most used adjectives between males and females
+![_includes/nouns_freq.jpg](_includes/verbs_freq.jpg)
+
+#### Adjectives
 {% include adj_freq.html %}
 
-#### The 30 most used adverbs between males and females
+#### Adverbs 
 {% include adverbs_freq.html %}
+
+![_includes/adv_freq.jpg](_includes/adv_freq.jpg)
 
 ## Conclusion
 
