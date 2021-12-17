@@ -10,7 +10,7 @@ div{
   width:100%
  }
 
-img { width:100%
+img { width:80%
  }
  
  td, th {
@@ -279,16 +279,24 @@ Top 10 topics...                     |  ...for all genders
   <th> ...for all genders </th>
  </tr>
  <tr>
-  <td>  Accuracy on test set </td>
-  <td> 0.741  </td>
+  <td> <img src="assets/0_wc.jpg" alt="Trulli" width="100" height="100"> </td>
+  <td> <img src="assets/1_wc.jpg" alt="Trulli" width="100" height="100">  </td>
  </tr>
  <tr>
-  <td> Precision  </td>
-  <td> 0.741 </td>
+  <td> <img src="assets/2_wc.jpg" alt="Trulli" width="100" height="100">  </td>
+  <td> <img src="assets/3_wc.jpg" alt="Trulli" width="100" height="100"> </td>
  </tr>
  <tr>
-  <td> Recall </td>
-  <td> 0.747   </td>
+  <td> <img src="assets/4_wc.jpg" alt="Trulli" width="100" height="100">  </td>
+  <td> <img src="assets/5_wc.jpg" alt="Trulli" width="100" height="100"> </td>
+ </tr>
+ <tr>
+  <td> <img src="assets/6_wc.jpg" alt="Trulli" width="100" height="100">  </td>
+  <td> <img src="assets/7_wc.jpg" alt="Trulli" width="100" height="100"> </td>
+ </tr>
+ <tr>
+  <td> <img src="assets/8_wc.jpg" alt="Trulli" width="100" height="100">  </td>
+  <td> <img src="assets/9_wc.jpg" alt="Trulli" width="100" height="100"> </td>
  </tr>
 </table>
 
@@ -346,14 +354,15 @@ Greta puts on the "crisis" state we're in and the need to "act".
 
 
 ![assets/Word_clouds_females.jpg](assets/Word_clouds_females.jpg)
-
+<img src="assets/Word_clouds_females.jpg" alt="Trulli">
 
 Now, we'll also join Donald Trump, Pope Francis and Barack Obama. Here are their three main contributions to our topics. Those are quite precise and reveal a lot
 about their speaker occupation. Have you already spot the "hoax" word into Trump's word clouds... ?
 
 
 ![assets/Word_clouds_males.jpg](assets/Word_clouds_males.jpg)
-
+<img src="assets/Word_clouds_males.jpg" alt="Trulli">
+ 
 For a last time, we predict with logistic regression and random forest classifier.
 
 <table>
@@ -384,7 +393,7 @@ Our dataset was quite imbalanced this time, and even if we have a higher accurac
 the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice ! 
 
 ![assets/logistic_regression_confusion_matrix_famous_speakers.jpg](assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
-
+<img src="assets/logistic_regression_confusion_matrix_famous_speakers.jpg" alt="Trulli">
 
 Let's end up this little tour with a closer analysis of the logistic regression coefficients. Environmental topics are balanced between both gender, but we can still notice
 that women tend to underline more the "crisis" and the "community" aspects. Note the prevalence of the topics "us" and "ourselves". 
@@ -473,7 +482,7 @@ Which _verbs_ are used most by men and which by women?
 From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
   ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
- 
+ <img src="assets/verbs_freq.jpg" alt="Trulli">
  
 <h4> Nouns </h4>
 
@@ -484,6 +493,7 @@ Which <i>nouns</i> are used most by men and which by women?
 Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
 
   ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
+ <img src="assets/nouns_freq.jpg" alt="Trulli">
 
  
 <h4> Adjectives </h4>
@@ -494,6 +504,7 @@ Which _adjectives_ are used most by men and which by women?
 Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. 
 
   ![assets/adj_freq.jpg](assets/adj_freq.jpg)
+ <img src="assets/adj_freq.jpg" alt="Trulli">
 
  
 <h4> Adverbs  </h4>
@@ -504,7 +515,7 @@ Which <i>adverbs</i> are used most by men and which by women?
 
 On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers.
  
-  ![assets/adv_freq.jpg](assets/adv_freq.jpg)
+ ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 
  <img src="assets/adv_freq.jpg" alt="Trulli">
 
