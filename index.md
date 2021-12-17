@@ -4,7 +4,7 @@
 ## Introduction
 
 
-<p align="center"> 
+<p style="text-align"> 
 Dear ADAdventurer, 
 We welcome you onboard a datatrip throughout ecology, environment and climate change. During this journey, you'll be following men and women speakers from a bunch of English newspapers and websites, from 2015 to 2020. 
 
@@ -39,7 +39,7 @@ But aren't you curious to know more about the people who have received the most 
 
 {% include most_famous.html %}
 
-_side note: The popularity of a person is defined as the number of times their quotes have been republished, the greater the number, the more popular the person.
+_Side notes : The popularity of a person is defined as the number of times their quotes have been republished, the greater the number, the more popular the person_.
 
 Starting with the men, a rather interesting observation can be made. Among the 30 most famous men, only one of them (who corresponds to 3% of the sample) is not a politician: Pope Francis. He is the third most famous speaker. 
 
