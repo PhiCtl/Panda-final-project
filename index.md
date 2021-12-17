@@ -116,6 +116,11 @@ Random Forest performs as expected quite well, but the analysis of feature impor
 We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. 
 {% include topic_distrib_all_genders.html %}
 
+<p float="left">
+  <img src="_includes/0_wc.jpg" width="100" />
+  <img src="_includes/1_wc.jpg" width="100" /> 
+</p>
+
 Top 6 topics...                            |  ...for all genders
 :-----------------------------------------:|:-------------------------------------------:
 ![_includes/0_wc.jpg](_includes/0_wc.jpg)  |  ![_includes/1_wc.jpg](_includes/1_wc.jpg)
