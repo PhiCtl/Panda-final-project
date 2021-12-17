@@ -5,7 +5,9 @@
 div{
  text-align: justify}
  
-  table{ font-family: arial, sans-serif;
+  table{ 
+  class="center"
+  font-family: arial, sans-serif;
   border-collapse: collapse;
   width:100%
  }
@@ -340,14 +342,14 @@ Greta puts on the "crisis" state we're in and the need to "act".
 
 
 ![assets/Word_clouds_females.jpg](assets/Word_clouds_females.jpg)
-<img src="assets/Word_clouds_females.jpg" alt="Trulli">
+<img src="assets/Word_clouds_females.jpg" alt="Trulli" class=center>
 
 Now, we'll also join Donald Trump, Pope Francis and Barack Obama. Here are their three main contributions to our topics. Those are quite precise and reveal a lot
 about their speaker occupation. Have you already spot the "hoax" word into Trump's word clouds... ?
 
 
 ![assets/Word_clouds_males.jpg](assets/Word_clouds_males.jpg)
-<img src="assets/Word_clouds_males.jpg" alt="Trulli">
+<img src="assets/Word_clouds_males.jpg" alt="Trulli" class=center >
  
 For a last time, we predict with logistic regression and random forest classifier.
 
@@ -462,13 +464,12 @@ For each study group of words considered (namely between verbs, nouns, adjective
 
 <h4> Verbs </h4>
 
-Which _verbs_ are used most by men and which by women?
+Which <i>verbs</i> are used most by men and which by women?
 
 {% include verbs_freq.html %}
 From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
-  ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
- <img src="assets/verbs_freq.jpg" alt="Trulli">
+ <img src="assets/verbs_freq.jpg" alt="Trulli" class=center >
  
 <h4> Nouns </h4>
 
@@ -478,8 +479,7 @@ Which <i>nouns</i> are used most by men and which by women?
 
 Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
 
-  ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
- <img src="assets/nouns_freq.jpg" alt="Trulli">
+ <img src="assets/nouns_freq.jpg" alt="Trulli" class=center>
 
  
 <h4> Adjectives </h4>
@@ -489,8 +489,7 @@ Which _adjectives_ are used most by men and which by women?
 
 Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. 
 
-  ![assets/adj_freq.jpg](assets/adj_freq.jpg)
- <img src="assets/adj_freq.jpg" alt="Trulli">
+ <img src="assets/adj_freq.jpg" alt="Trulli" class=center >
 
  
 <h4> Adverbs  </h4>
@@ -500,10 +499,8 @@ Which <i>adverbs</i> are used most by men and which by women?
 {% include adverbs_freq.html %}
 
 On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers.
- 
- ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 
- <img src="assets/adv_freq.jpg" alt="Trulli">
+ <img src="assets/adv_freq.jpg" alt="Trulli" class=center>
 
 <h2> Conclusion </h2>
 
@@ -519,7 +516,7 @@ On the use of adverbs, it can be noted that the three most used by both genders 
  </tr>
  <tr>
   <td> <img src="photo.jpg" alt="Trulli"> </td>
-  <td> <img src="photo.jpg" alt="Trulli"> </td>
+  <td> <img src="Philippine.jpg" alt="Trulli"> </td>
   <td> <img src="WhatsApp Image 2021-12-17 at 15.05.58.jpeg"> </td>
   <td> <img src="CV2.jpg" alt="Trulli">  </td>
  </tr>
