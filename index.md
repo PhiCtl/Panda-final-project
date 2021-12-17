@@ -52,7 +52,7 @@ Attention! This does not mean that men have less varied profiles than women, but
 {% include most_famous_women.html %}
 
 If we now restrict ourselves to the three most famous men and three most famous women, how did their media coverage evolve during the 5 years? First, concerning political figures, we notice that the evolution of their popularity over the years is strongly correlated with the important stages of their political life. For example, Barack Obama's popularity decreases with the years, which correspond to the end of his mandate. On the other hand, for Hilary Clinton and Donald Trump, popularity increases in 2015 and 2016, during the US presidential campaign. For Trump, a peak is reached at the beginning of his mandate in 2017 and then decreases from year to year, while for Clinton, as soon as the presidential elections are over, her popularity rating drops. 
-Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which corresponds to the year of the publication of "Laudato Si", his encyclical on ecology. It seems that Angela Merkel also had a popularity peak in 2017, the year of the COP23 in Bonn, Germany. Finally, the graph suggests that in 2019, Greta began to receive a lot of media attention, following its intervention at the COP24 in 2018. 
+Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which corresponds to the year of the publication of "Laudato Si", his encyclical on ecology. It seems that Angela Merkel also had a popularity peak in 2017, the year of the COP23 in Bonn, Germany. Finally, the graph suggests that in 2019, Greta began to receive a lot of media attention, following its intervention at the COP24 in 2018.  
 
 {% include evolution_famous.html %}
 
