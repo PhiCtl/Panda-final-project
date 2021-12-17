@@ -4,7 +4,7 @@
 ## Introduction
 
 
-<p align="justify"> 
+<p align="right"> 
 Dear ADAdventurer, 
 We welcome you onboard a datatrip throughout ecology, environment and climate change. During this journey, you'll be following men and women speakers from a bunch of English newspapers and websites, from 2015 to 2020. 
 
@@ -234,16 +234,26 @@ So we looked at the differences between the two genders. We visualized the densi
 
 {% include quotations_density.html %}
 
-We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. 
+We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. You can find below examples of positive and negative quotes. 
+
+| Examples quotations with negative score  | Score | Examples quotations with positive score | Score |
+|---|---|---|---|
+| "#MeToo has created an environment of  empathy. The biggest positive is that now people don't dismiss it." | 0,6808 | "It's indicative of a very worrying trend. If we don't  reign in global warming pollution,about a million species or 15 percent of species on earth are vulnerable to extinction  from climate change." | -0,5267 |
+| "Our Planet and Environment is something we all  cherish greatly" | 0,9020 | "It's just a technological engineering problem to solve on what  to do with the waste" | -0,5719 |
+| "This is really a vote of no confidence  because we believe that the system has become captive" | 0,2247 | "This is not over. The state agencies have failed the  process." | -0,250 |
+| "There are inspiring examples across Africa.  We must take the opportunity to share best practices  andlearn from each other."  | 0,9403 | "There is anger, despair and horror amoung residents -  who fear further years of noise, dust, pollution and the spread of cancer." | -0,9538 |
+
+
 We can see that the positive quotes represent **half** of all quotes. And as seen previously, the proportion between men and women of positive and negative quotes is the same. 
 {% include scorennp.html %}
 
 To complete our study, we plotted the distribution of positive versus negative citations by making the absolute value of all negative scores. We thus observe in general more positive quotations than negative ones. But the most surprising thing is that we have a bigger difference for scores higher than 0,4. Thus for quotes with a score above 0.4, there are **2.4** times more positive quotes than negative ones, while for lower scores there are only **1.5** times more positive quotes. 
 
-We can therefore suppose that the speakers moderate themselves more to express negation. However ecology is a subject that worries a lot nowadays, the lexical fields of guilt and fear govern the discourses on this topic. This [study](https://journals.sagepub.com/doi/full/10.1177/0539018421996264) studied the emotions when talking about ecology and found that more negative emotions are expressed in this topic. Thus we have interesting and surprising results compared to what we had imagined. 
-However, it is important to note here that the database only lists quotes from speakers listed in newspapers, so these quotes do not represent everyone's sentences.
 {% include evolutions_scores.html %}
 
+We can therefore suppose that the speakers moderate themselves more to express negation. However ecology is a subject that worries a lot nowadays, the lexical fields of guilt and fear govern this topic. This [study](https://journals.sagepub.com/doi/full/10.1177/0539018421996264) studied the emotions when talking about ecology and found that more negative emotions are expressed in this topic. Thus we have interesting and surprising results compared to what we had imagined. 
+
+However, it is important to note here that the database only lists quotes from speakers listed in newspapers, so these quotes do not represent everyone's sentences. The quotation of newspapers are therefore maybe biased. 
 
 ## What are the words most used by males and females?
 
