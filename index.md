@@ -144,6 +144,7 @@ _TODO : conclude here_
 {% include quotations_sentiment_all.html %}
 {% include quotations_sentiment_all.html %}
 {% include evolutions_scores.html %}
+{% include scorennp.html %}
 
 ## What are the words most used by males and females?
 
