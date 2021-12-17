@@ -140,6 +140,11 @@ _TODO : present test and comment on results and coefficients_
 
 _TODO : conclude here_
 
+## Sentiment analysis of quotations
+{% include quotations_sentiment_all.html %}
+{% include quotations_sentiment_all.html %}
+{% include evolutions_scores.html %}
+
 ## What are the words most used by males and females?
 
 Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
