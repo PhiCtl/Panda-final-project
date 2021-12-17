@@ -4,7 +4,7 @@
 ## Introduction
 
 
-
+<p align="center"> 
 Dear ADAdventurer, 
 We welcome you onboard a datatrip throughout ecology, environment and climate change. During this journey, you'll be following men and women speakers from a bunch of English newspapers and websites, from 2015 to 2020. 
 
@@ -16,7 +16,7 @@ Can we still find some clues from these quotes, supporting the hypothesis that e
 _Side notes : we performed our analysis with binary gender (male or female) only for the sake of simplicity_.
 
 And now, let's jump in !
-
+</p>
 ## Our storyteller
 ### Quotebank processed dataset
 
