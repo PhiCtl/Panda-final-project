@@ -36,19 +36,6 @@ Evolution of the proportion of men and women speakers over the five years
 
 Who are the 30 most famous speakers over the five years? By famous we meand the number of occurences the quote occurs in the articles. 
 
-{% include  most_famous_all.htm %}
-
-Who are the mmost famous men? 
-
-{% include most_famous_men.html %}
-
-Who are the most famous women? 
-
-{% include most_famous_women.html %}
-
-How evolved the number of occurences of the most famous speakers over the 5 years? 
-
-{% include evolution_most_famous.html %}
 
 ## Show me what you're talking about and I'll tell you who you are
 
