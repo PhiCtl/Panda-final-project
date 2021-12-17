@@ -29,7 +29,7 @@ img { width:100%
   <h2> Introduction </h2>
 
 <div> 
-Dear ADAdventurer, 
+Dear ADAdventurer,  <br>
 We welcome you onboard a datatrip throughout ecology, environment and climate change. During this journey, you'll be following men and women speakers from a bunch of English newspapers and websites, from 2015 to 2020. 
 
 Before diving in, let's pause for a second. Why did we join this ADAdventure ? It comes from some personal observations, that you might share, or not ! People around us, and more especially students, tend to feel more or less concerned and to involve themselves in a different way, regarding ecology and environment. Indeed, the proportion of women commited into reducing their wastes, buying second hand or avoiding meat seemed quite high to us. So we decided to read about it.   
@@ -463,7 +463,7 @@ Which <i>verbs</i> are used most by men and which by women?
 {% include verbs_freq.html %}
 From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
- <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="300" height="500">
+ <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="200" height="300">
  
 <h4> Nouns </h4>
 
@@ -473,7 +473,7 @@ Which <i>nouns</i> are used most by men and which by women?
 
 Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
 
- <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="500">
+ <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="100" height="200">
  
 <h4> Adjectives </h4>
 Which _adjectives_ are used most by men and which by women?
@@ -492,16 +492,13 @@ Which <i>adverbs</i> are used most by men and which by women?
 
 On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers.
 
- <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="300" height="500">
+ <img src="assets/adv_freq.jpg" alt="Trulli" class=center>
 
 <h2> Conclusion </h2>
  
 What a nice adventure ! We hope you enjoyed this datatrip with the Panda team throughout ecology, environment and climate change. We made some beautiful discoveries. 
 
-First of all, from a statistical point of view, speakers seem quite committed regarding the topics that were brought up. They present current issues such as pollution and carbon emissions along with their long term consequences which are clearly stated by each gender such as animal extinction, water shortage. They urge to take actions and some solutions are discussed : sustainability, involvement of government
-
-
-Regarding our research on the topic of ecology through the genres, we didn’t have as many shades as expected.  
+First of all, from a statistical point of view, speakers seem quite committed regarding the topics that were brought up. They present current issues such as pollution and carbon emissions along with their long term consequences which are clearly stated by each gender such as animal extinction, water shortage. They urge to take actions and some solutions are discussed : sustainability, involvement of government. Regarding our research on the topic of ecology through the genres, we didn’t have as many shades as expected.  
 
 However, some elements can be noticed : 
 <ul>
@@ -519,18 +516,18 @@ Moreover, quotations are mainly classified as neutral, and then positive, while 
 Thus the conclusions and observations we can make on our dataset should only be taken with great caution. Our dataframe of quotes on ecology has many biases. 
 
 First of all, we can highlight some issues with the way data was collected : 
+ 
  <ul>
-  <li> First, we used a greedy approach to select the environmental linked quotes and we might have missed some.
+  <li> First, we used a greedy approach to select the environmental linked quotes and we might have missed some. </li>
 
-  <li> Secondly, the speakers were selected so that the probability is greater than 0.5. Thus we are not entirely sure of our results and this can lead to mistakes in the gender of the speakers. 
-  <li> Finally some speakers could be wrongly attributed by the algorithm which can also lead to some errors. 
+  <li> Secondly, the speakers were selected so that the probability is greater than 0.5. Thus we are not entirely sure of our results and this can lead to mistakes in the gender of the speakers. </li>
+  <li> Finally some speakers could be wrongly attributed by the algorithm which can also lead to some errors. </li> 
  </ul>
  
-The nature of the data itseld leads to some biases
-All the quotes are extracted from English speaking only newspapers. Thus, it’s not totally representative of the ecology. In fact, it concerns mostly modern world developed and rich countries. 
-Moreover, quotes were first extracted and processed by journalists to support a reasoning , and might not fully express what the speaker intended. We're dealing here with reported speech, and not direct quotations.
+The nature of the data itseld leads to some biases. All the quotes are extracted from English speaking only newspapers. Thus, it’s not totally representative of the ecology. In fact, it concerns mostly modern world developed and rich countries. Moreover, quotes were first extracted and processed by journalists to support a reasoning , and might not fully express what the speaker intended. We're dealing here with reported speech, and not direct quotations.
 
-In a nutshell, our road throughout those quotes sketched some gender trends and supported some of our hypotheses, and can be further refined with a speaker specific approach or taking into account much more context about the speaker and the media the quote comes from !
+In a nutshell, our road throughout those quotes sketched some gender trends and supported some of our hypotheses, and can be further refined with a speaker specific approach or taking into account much more context about the speaker and the media the quote comes from ! <br>
+ <br>
 
  
  
@@ -551,10 +548,4 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
  </tr>
 </table>
 
-<h3> Our data </h3>
 
-<h3> Our methods </h3>
- 
-</div>
- </body>
- </html>
