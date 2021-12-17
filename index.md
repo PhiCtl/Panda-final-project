@@ -4,10 +4,20 @@
 <style>
 div{
  text-align: justify}
+ 
+  table{ font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:100%
+ }
+ 
+ td, th {
+  border: 1px solid #dddddd;
+ text-align:left;
+ padding:8px;
+ }
 </style>
 
- <title>  Who does really care about climate change ?  </title>
-  
+ <h1>  Who does really care about climate change ?  </h1>
  <h1> A gender driven journey throughout environment related topics in the media </h1>
  </head>
  <body>
@@ -32,7 +42,7 @@ And now, let's jump in !
 <h2> Our storyteller </h2>
 <h3> Quotebank processed dataset </h3>
 
-Here is our raw storyteller ! From **21,470,292** quotes we extracted **335,250** quotes dealing with environment, so roughly **1.5 %**. Below we present the gender repartition per year on those quotes. Women tend to represent **one fifth** of the total number of speakers on the topic.
+Here is our raw storyteller ! From <b>21,470,292</b> quotes we extracted <b>335,250</b> quotes dealing with environment, so roughly <b>1.5 %</b>. Below we present the gender repartition per year on those quotes. Women tend to represent <b>one fifth</b> of the total number of speakers on the topic.
 
 {% include statistics_quotes.html %}
 
@@ -58,7 +68,7 @@ Starting with the men, a rather interesting observation can be made. Among the 3
 
 {% include most_famous_men.html %}
 
-On the other hand, the profiles of the 30 most famous women are much more varied: only 60% of them are politicians (against 97% on the men’s side). There is also a very famous climate activist: Greta Thunberg (who represents 3% of the sample), two women are scientists specialized in environmental issues (6%) and the remaining 30% are public figures such as actresses, singers, writers, models etc... 
+On the other hand, the profiles of the 30 most famous women are much more varied: only <b>60%</b> of them are politicians (against <b>97%</b> on the men’s side). There is also a very famous climate activist: Greta Thunberg (who represents <b>3%</b> of the sample), two women are scientists specialized in environmental issues (<b>6%</b>) and the remaining 30% are public figures such as actresses, singers, writers, models etc... 
 
 Attention! This does not mean that men have less varied profiles than women, but only that among the 30 most famous for each gender, there are half as many politicians among women as among men. 
 
@@ -73,7 +83,7 @@ Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which c
 
 <h3> Topics broken down to words </h3>
  
-We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set. </p> 
+We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set. 
 
 
 |                      | Random Forest | Logistic regression |
@@ -82,6 +92,27 @@ We're reaching a cross road, and before following the path of topic analysis, le
 | Precision            | 0.561         | 0.565               |
 | Recall               | 0.485         | 0.564               |
 
+<table>
+ <tr>
+  <th> </th>
+  <th> Random Forest </th>
+  <th> Logistic regression </th>
+ </tr>
+ <tr>
+  <td>  Accuracy on test set </td>
+  <td> 0.556 </td>
+  <td> 0.567 </td>
+ </tr>
+ <tr>
+  <td> Precision  </td>
+  <td> 0.561 </td>
+  <td> 0.565  </td>
+ </tr>
+ <tr>
+  <td> Recall </td>
+  <td> 0.485  </td>
+  <td> 0.564  </td>
+ </tr>
 
  Given all the pieces of information coming from the words that we have at our disposal, across all quotes, we cannot make a very significative statement about the speaker gender. This can be explained by the following fact. Even if we artificially balanced the dataset, we have very few quotes attributed to women, and thus less diversity in the words. Therefore our classifiers weren't able to grasp a meaningful aspect linked to gender out of it. We can nevertheless explore how our more performant classifier made its choices, taking a look at each coefficient importance into the task of predicting whether the speaker is a woman or not. The more positive the coefficient, the more weight it gives towards predicting "woman", the more negative, the better it is to predict "man".
 
@@ -90,17 +121,12 @@ We're reaching a cross road, and before following the path of topic analysis, le
 Two interesting facts can be highlighted there. First of all, the most prominent words are gender related, such as <i>girl, woman, guy,</i> or <i>husband</i>. Secondly, action verbs like <i>shall, execute</i> and <i>operate</i> are used to classify "man", while more diverse types of words are linked to predicting "woman". We managed to pick one interesting aspect from our guests !
 
 We decide to turn left, and discover the topics landscapes. Don't loose the track, and follow us !
-
- 
- _girl_, _woman_, _guy_, or _husband_.
- _shall_, _execute_ and _operate_
  
 <h3> Where LDA comes into play </h3>
 <i>Test bold text</i>
 Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed <b>248'211 quotes</b>, among which we have <b>47'374 women and 200'837 men</b>. So <b>20%</b> (only...) of our guests are women, and the <b>80%</b> left are men. 
-LDA managed to extract <b>7 topics</b> that are presented in details below : </p>  
- **248'211 quotes**
- **47'374 women and 200'837 men**
+LDA managed to extract <b>7 topics</b> that are presented in details below :
+
 
 | Topic number | Topic main word | Second word       | Third word             | Fourth word      | Description interpretation |
 |--------------|-----------------|-------------------|------------------------|------------------|----------------------------|
@@ -178,8 +204,7 @@ Top 10 topics...                     |  ...for all genders
 ![assets/8_wc.jpg](assets/8_wc.jpg)  |  ![assets/9_wc.jpg](assets/9_wc.jpg)
 
 
-Below you can explore and compare the top 20 topics brought by our speakers. Each topic name refers to the most weighted word in the given topic. Epa stands for the US Environmental
-Protection Agency and iot for the Internet of Things.
+Below you can explore and compare the top 20 topics brought by our speakers. Each topic name refers to the most weighted word in the given topic. Epa stands for the US Environmental Protection Agency and iot for the Internet of Things.
 
 {% include topic_distrib_all_genders.html %}
 
@@ -283,8 +308,7 @@ To complete our study, we plotted the distribution of positive versus negative c
 We can therefore suppose that the speakers moderate themselves more to express negation. However ecology is a subject that worries a lot nowadays, the lexical fields of guilt and fear govern this topic. <a href="https://journals.sagepub.com/doi/full/10.1177/0539018421996264">This study</a> studied the emotions when talking about ecology and found that more negative emotions are expressed in this topic. Thus we have interesting and surprising results compared to what we had imagined. 
 
 However, it is important to note here that the database only lists quotes from speakers listed in newspapers, so these quotes do not represent everyone's sentences. The quotation of newspapers are therefore maybe biased. 
- 
-[study](https://journals.sagepub.com/doi/full/10.1177/0539018421996264) 
+
 <h2> What are the words most used by males and females? </h2>
 
 Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
@@ -304,22 +328,18 @@ Which _verbs_ are used most by men and which by women?
 From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
   ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
-
- _go_, _think_ and _need_
  
  
 <h4> Nouns </h4>
 
-Which _nouns_ are used most by men and which by women?
+Which <i>nouns</i> are used most by men and which by women?
 
 {% include nouns_freq.html %}
 
 Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
 
   ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
- _people_, _climate_, _change_
- _health_, _life_ and _science_
- _level_, _carbon_, _business_
+
  
 <h4> Adjectives </h4>
 Which _adjectives_ are used most by men and which by women?
@@ -330,22 +350,14 @@ Under the study of the adjectives, it can be seen that the three most used are <
 
   ![assets/adj_freq.jpg](assets/adj_freq.jpg)
 
-_enviromental_, _good_ and _important_
- _global_ and _high_
  
 <h4> Adverbs  </h4>
 
 Which <i>adverbs</i> are used most by men and which by women?
- _adverbs_
  
 {% include adverbs_freq.html %}
 
 On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers.
- 
- 
-_forward_, _actutally_, _away_
- _truly_, _hard_, _directly_, _exactly_, _way_
- _well_, _likely_, _highly_, _increasingly_, _obviously_
  
   ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 
