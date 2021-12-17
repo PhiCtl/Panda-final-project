@@ -145,34 +145,43 @@ _TODO : conclude here_
 Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
 
 ### Where and how WFA comes into play
-We did a deep analysis to find out which are the most used words among the female and male speakers. We used a _Word Frequency Analysis_ tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. The results obtained are reported below. 
+We did a deep analysis to find out which are the most used words among the female and male speakers. We used a _Word Frequency Analysis_ tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. 
 
-For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the _word clouds_ visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of text, where the size of each word is proportional to the number of times it has been counted in the quotations. These visualisations are interesting, and they can be a quick way to give an overview of how our speakers are talking.
+For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the _word clouds_ visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of quotations, where the size of each word is proportional to the number of times it has been counted in the set of all quotations. These visualisations are interesting, and they can be a quick and direct way to give an overview of how our speakers are talking.
 
 #### Verbs
 Which _verbs_ are used most by men and which by women?
 
 {% include verbs_freq.html %}
 
-From the study of the verbs, it can be noticed that the three most used are _go_, _think_, _need_. The difference between the genders is very slight, however it can be noted that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers. 
+From the study of the verbs, it can be noticed that the three most used are _go_, _think_ and _need_. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
-![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
+<p align="center">
+  ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
+</p>
 
 #### Nouns
 Which _nouns_ are used most by men and which by women?
 
 {% include nouns_freq.html %}
 
-Regarding the nouns, the most three used, for both gender, are _people_, _climate_, _change_. However, all three of the latter seem to be used more by females spekaers, which could confirm our hypothesis that females are probably more involved in ecology topics.
+Regarding the nouns, the most three used, for both gender, are _people_, _climate_, _change_. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns _health_, _life_ and _science_ seem only used from female speakers. On the other hand, we observe that the nouns _level_, _carbon_, _business_ are only used from male speakers. 
 
-![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
+<p align="center">
+  ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
+</p>
 
 #### Adjectives
 Which _adjectives_ are used most by men and which by women?
 
 {% include adj_freq.html %}
 
-![assets/adj_freq.jpg](assets/adj_freq.jpg)
+Under the study of the adjectives, it can be seen that the three most used are _enviromental_, _good_ and _important_ for both gender. Furthermore, it can be noticed a greater use of the _global_ and _high_ adjectives from the side of the male speakers. 
+
+<p align="center">
+  ![assets/adj_freq.jpg](assets/adj_freq.jpg)
+</p>
+
 
 #### Adverbs 
 Which _adverbs_ are used most by men and which by women?
@@ -181,7 +190,9 @@ Which _adverbs_ are used most by men and which by women?
 
 On the use of adverbs, it can be noted that the three most used by both genders are _forward_, _actutally_, and _away_ (with a majority from the female speakers), whereas _truly_, _hard_, _directly_, _exactly_, _way_ seem to be used only by male speakers and _well_, _likely_, _highly_, _increasingly_, _obviously_ only by female speakers.
 
-![assets/adv_freq.jpg](assets/adv_freq.jpg)
+<p align="center">
+  ![assets/adv_freq.jpg](assets/adv_freq.jpg)
+</p>
 
 ## Conclusion
 
