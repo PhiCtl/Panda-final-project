@@ -40,7 +40,7 @@ Can we still find some clues from these quotes, supporting the hypothesis that e
 
   <p style="font-style: italic;">Side notes : we performed our analysis with binary gender (male or female) only for the sake of simplicity.</p>
 
-And now, let's jump in!
+And now, let's jump in !
  
 <h2> Our storyteller </h2>
 <h3> Quotebank processed dataset </h3>
@@ -522,6 +522,26 @@ On the use of adverbs, it can be noted that the three most used by both genders 
 <tr>
   <td> <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="400" height="400">  </td>
 </tr>
+ 
+<table class="center">
+ <tr>
+  <th> Verbs </th>
+  <th> Nouns </th>
+ </tr>
+ <tr>
+  <td> <img src="assets/verbs_freq.jpg" alt="Trulli" width="300" height="300"></td>
+  <td> <img src="assets/nouns_freq.jpg" alt="Trulli" width="300" height="300">  </td>
+ </tr>
+  <tr>
+  <th> Adjectives </th>
+  <th> Adverbs </th>
+ </tr>
+ <tr>
+  <td> <img src="assets/adj_freq.jpg" alt="Trulli" width="300" height="300">  </td>
+  <td> <img src="assets/adv_freq.jpg" alt="Trulli" width="300" height="300">  </td>
+ </tr>
+</table>
+ <br>
 
 <h2> Conclusion </h2>
  
