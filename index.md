@@ -4,11 +4,11 @@
 ## Introduction
 
 
-<p align="right"> 
+<p align="justify"> 
 Dear ADAdventurer, 
 We welcome you onboard a datatrip throughout ecology, environment and climate change. During this journey, you'll be following men and women speakers from a bunch of English newspapers and websites, from 2015 to 2020. 
 
-Before diving in, let's pause for a second. Why did we join this ADAdventure ? It comes from some personal observations, that you might share, or not ! People around us, and more especially students, tend to feel more or less concerned and to involve themselves in a different way, regarding ecology and environment. Indeed, the proportion of women commited into reducing their wastes, buying second hand or avoiding meat seemed quite high to us. So we decided to read about it. A [study](https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044) from Sweden suggested than men tend to have a larger carbon footprint. On the other hand, from studies( [here](https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044) and [there](https://www.weforum.org/agenda/2015/12/climate-friendly-men-or-women/)) conducted in some of the industrialised countries came the conclusion that women tend to be more concerned about those environmental issues. Indeed, they make a big part into daily life tasks and show more willingness to take action against climate change. The [United Nation Development Program](https://www.undp.org/blog/climate-change-isnt-gender-neutral-climate-action-shouldnt-be-either?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQiA5OuNBhCRARIsACgaiqWJC_ANIcSFrJsHJ0c4TsNzz8cJAr3BkpdXir5XwvbpEqlVf4n593UaAofaEALw_wcB) highlights the fact that women tend to be more impacted by global warming consequences. However, a last [article](https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/) reported that even if women feeled concerned, they showed less scientific knowledge that men.
+Before diving in, let's pause for a second. Why did we join this ADAdventure ? It comes from some personal observations, that you might share, or not ! People around us, and more especially students, tend to feel more or less concerned and to involve themselves in a different way, regarding ecology and environment. Indeed, the proportion of women commited into reducing their wastes, buying second hand or avoiding meat seemed quite high to us. So we decided to read about it.  A </p> [study](https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044) <p align="justify"> from Sweden suggested than men tend to have a larger carbon footprint. On the other hand, from studies( </p> [here](https://onlinelibrary.wiley.com/doi/10.1111/jiec.13176#jiec13176-bib-0044) <p align="justify">  and </p> [there](https://www.weforum.org/agenda/2015/12/climate-friendly-men-or-women/)) <p align="justify"> conducted in some of the industrialised countries came the conclusion that women tend to be more concerned about those environmental issues. Indeed, they make a big part into daily life tasks and show more willingness to take action against climate change. The </p> [United Nation Development Program](https://www.undp.org/blog/climate-change-isnt-gender-neutral-climate-action-shouldnt-be-either?utm_source=EN&utm_medium=GSR&utm_content=US_UNDP_PaidSearch_Brand_English&utm_campaign=CENTRAL&c_src=CENTRAL&c_src2=GSR&gclid=Cj0KCQiA5OuNBhCRARIsACgaiqWJC_ANIcSFrJsHJ0c4TsNzz8cJAr3BkpdXir5XwvbpEqlVf4n593UaAofaEALw_wcB) <p align="justify"> highlights the fact that women tend to be more impacted by global warming consequences. However, a last </p>  [article](https://climatecommunication.yale.edu/publications/gender-differences-in-public-understanding-of-climate-change/) <p align="justify"> reported that even if women feeled concerned, they showed less scientific knowledge that men.
 
 Therefore, men and women are expected to address those topics through different angles and with different rethoric tools. This has been highlighted several times when studying social media data such as reddit or tweet posts. However, here, we're dealing with reported speech. Indeed, what a quoted person said has been intentionnally selected by the journalist, taken out of context somehow and emphasized. 
 Can we still find some clues from these quotes, supporting the hypothesis that each speaker approaches ecology and other environmental issues depending on his or her gender ?
@@ -19,16 +19,16 @@ And now, let's jump in !
 </p>
 ## Our storyteller
 ### Quotebank processed dataset
-
+<p align="justify"> 
 Here is our raw storyteller ! From **21,470,292** quotes we extracted **335,250** quotes dealing with environment, so roughly **1.5 %**. Below we present the gender repartition per year on those quotes. Women tend to represent **one fifth** of the total number of speakers on the topic.
 {% include statistics_quotes.html %}
 
 Let's go further and analyse who is taking the floor...
-
+</p>
 ## How do environment-linked topics evolve from 2015 to 2020 ? Among those quotes, what is the proportion of men and women speakers ?
 
 ## Evolution of the proportion of men and women speakers 
-
+<p align="justify"> 
 Let's start our journey by comparing the proportion of men and women speakers on the ecology topic between 2015 and 2020. The first obvious thing, but unfortunately not surprising, is that there are many more collected quotes from men than from women (around 80% and 20% respectively). However, the good news is that over the years there has been a slow evolution reversing this trend. Indeed, since 2018, the proportion of women talking about ecology is increasingly important!
 
 {% include proportion_genders.html %}
@@ -56,11 +56,11 @@ Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which c
 
 {% include evolution_famous.html %}
 
-
+</p>
 ## Show me what you're talking about and I'll tell you who you are
 
 ### Topics broken down to words
-
+<p align="justify"> 
 We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set.
 
 
@@ -104,9 +104,9 @@ The second could deal with the urge to act. The third one clearly presents globa
 the seventh topic, the fifth about the waste management and the sixth about water. 
 
 {% include lda.html %}
-
+</p>
 ### Can we infer the gender from the quote ? 
-
+<p align="justify"> 
 As a starter, we'll have a look at how each topic evolved for each gender across years. We'll omit the strange artefacts from 2016 in our analysis which are not representative. 
 
 {% include topic_evolution_men.html %}
@@ -131,9 +131,9 @@ compared to good old logistic regression. However, the feature importance analys
 {% include random_forest_feature_importance.html %}
 
 We reached a summit but the view from there is a bit disappointed... There is a lot of fog. Let's go through the pass and down again in the next valley...
-
+</p>
 ### The path leads to Top2Vec
-
+<p align="justify"> 
 We'll turn to a more powerful tool to explore topics brought by the speakers, namely Top2Vec. Top2Vec provides meaningful embeddings for each of our quotes. We end up with a high dimensional vector space, 
 from which we want to extract clusters and their centroid. Then, Top2Vec makes use of UMAP for dimensionality reduction, and finally applies HDBSCAN for clustering. 
 Each topic vector is then computed as the centroid of the found clusters. 
@@ -184,9 +184,9 @@ the topic keywords, but the classifier does not seem to base its main decisions 
 
 
 {% include coefs_logistic_gender_topic_prediction_top2vec.html %}
-
+</p>
 ### In the foreground for climate and environment
-
+<p align="justify"> 
 We can therefore try to be more specific and look at the main spokespersons for climate. At the beginning of our journey, we met the three main speakers for each gender.
 Let's have a look at what they actually say and train a classifier to decide, from a mix of their quotes, whether the speaker is a man or a woman.
 
@@ -222,8 +222,9 @@ that women tend to underline more the "crisis" and the "community" aspects. Note
 {% include coefs_logistic_gender_topic_prediction_famous_speakers.html %}
 
 This second trip has come to an end and we come back to our starting point with some interesting knowledge. 
-
+</p>
 ## Sentiment analysis of quotations
+<p align="justify"> 
 Now let’s move on to the exploration of the difference between the sentimental score of the quotes between men and women. For this purpose we used the ntlk library. 
 
 First let’s have a look at the distribution of the sentimental score of the quotes. We have a huge peak for neutral sentiment. Of all the quotations on ecology, we have ** 81663** that have a score of 0, i.e 27% of the total. But what does a score of 0 mean? It is for all the quotes that simply give a state, an information like for example "There are not only channel to us” or “less bleached than reefs further offshore”. 
@@ -254,57 +255,63 @@ To complete our study, we plotted the distribution of positive versus negative c
 We can therefore suppose that the speakers moderate themselves more to express negation. However ecology is a subject that worries a lot nowadays, the lexical fields of guilt and fear govern this topic. This [study](https://journals.sagepub.com/doi/full/10.1177/0539018421996264) studied the emotions when talking about ecology and found that more negative emotions are expressed in this topic. Thus we have interesting and surprising results compared to what we had imagined. 
 
 However, it is important to note here that the database only lists quotes from speakers listed in newspapers, so these quotes do not represent everyone's sentences. The quotation of newspapers are therefore maybe biased. 
-
+</p>
 ## What are the words most used by males and females?
-
+<p align="justify"> 
 Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
-
+</p>
 ### Where and how WFA comes into play
+<p align="justify">
 We did a deep analysis to find out which are the most used words among the female and male speakers. We used a _Word Frequency Analysis_ tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. 
 
 For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the _word clouds_ visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of quotations, where the size of each word is proportional to the number of times it has been counted in the set of all quotations. These visualisations are interesting, and they can be a quick and direct way to give an overview of how our speakers are talking.
+</p>
 
 #### Verbs
+<p align="justify">
 Which _verbs_ are used most by men and which by women?
 
 {% include verbs_freq.html %}
 
 From the study of the verbs, it can be noticed that the three most used are _go_, _think_ and _need_. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
-
+</p>
 <p align="center">
   ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
 </p>
 
 #### Nouns
+<p align="justify">
 Which _nouns_ are used most by men and which by women?
 
 {% include nouns_freq.html %}
 
 Regarding the nouns, the most three used, for both gender, are _people_, _climate_, _change_. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns _health_, _life_ and _science_ seem only used from female speakers. On the other hand, we observe that the nouns _level_, _carbon_, _business_ are only used from male speakers. 
-
+</p>
 <p align="center">
   ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
 </p>
 
 #### Adjectives
+<p align="justify">
 Which _adjectives_ are used most by men and which by women?
 
 {% include adj_freq.html %}
 
 Under the study of the adjectives, it can be seen that the three most used are _enviromental_, _good_ and _important_ for both gender. Furthermore, it can be noticed a greater use of the _global_ and _high_ adjectives from the side of the male speakers. 
-
+</p>
 <p align="center">
   ![assets/adj_freq.jpg](assets/adj_freq.jpg)
 </p>
 
 
 #### Adverbs 
+<p align="justify">
 Which _adverbs_ are used most by men and which by women?
 
 {% include adverbs_freq.html %}
 
 On the use of adverbs, it can be noted that the three most used by both genders are _forward_, _actutally_, and _away_ (with a majority from the female speakers), whereas _truly_, _hard_, _directly_, _exactly_, _way_ seem to be used only by male speakers and _well_, _likely_, _highly_, _increasingly_, _obviously_ only by female speakers.
-
+</p>
 <p align="center">
   ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 </p>
