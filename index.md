@@ -20,7 +20,7 @@ img { width:100%
  }
 </style>
 
- <h1>  Who does really care about climate change ?  </h1>
+ <title>  Who does really care about climate change ?  </title>
  <h1> A gender driven journey throughout environment related topics in the media </h1>
  </head>
  <body>
