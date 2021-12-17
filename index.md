@@ -87,9 +87,9 @@ Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which c
 
 <h3> Topics broken down to words </h3>
  
-We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set. 
+We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set. <br>
 
-<table>
+<table class="center">
  <tr>
   <th> </th>
   <th> Random Forest </th>
@@ -121,11 +121,10 @@ Two interesting facts can be highlighted there. First of all, the most prominent
 We decide to turn left, and discover the topics landscapes. Don't loose the track, and follow us !
  
 <h3> Where LDA comes into play </h3>
-<i>Test bold text</i>
 Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed <b>248'211 quotes</b>, among which we have <b>47'374 women and 200'837 men</b>. So <b>20%</b> (only...) of our guests are women, and the <b>80%</b> left are men. 
-LDA managed to extract <b>7 topics</b> that are presented in details below :
+LDA managed to extract <b>7 topics</b> that are presented in details below : <br>
 
-<table>
+<table class="center">
  <tr>
   <th> Topic number </th>
   <th> Topic main word </th>
@@ -192,6 +191,7 @@ LDA managed to extract <b>7 topics</b> that are presented in details below :
  </tr>
 </table>
  
+ <br>
  
 We can really explore each topic using pyLDAvis tool. We can manually extract the meaningful topics, and see how close the topics are (in the blob graph below). Moreover, each topic word is nicely detailed. 
 
@@ -217,9 +217,9 @@ The words refer to the first most meaningful word for each topic.
 We don’t learn much from a gender-split analysis, but we can still observe that the topic repartition and evolution is quite similar. “People” and “Work” topics seem quite popular among our speakers, and we see a small rise of  “Climate” and “Year” topic towards the end of our studied period.
 
 Let's put on our hiking shoes, grab our camera and follow the track. Will logistic regression and random forest lead us to a clear gender distinction within topics ? We infer each quote topic multinomial distribution, and we write down the score for each topic to constitute our feature matrix. Then we make sure that we have 
-as many quotes from men than women speakers. Finally, we took care of tuning random forest in order to select the best depth and number of estimators.  
+as many quotes from men than women speakers. Finally, we took care of tuning random forest in order to select the best depth and number of estimators.  <br>
 
- <table>
+<table class="center">
  <tr>
   <th> </th>
   <th> Random Forest </th>
@@ -241,6 +241,7 @@ as many quotes from men than women speakers. Finally, we took care of tuning ran
   <td> 0.463  </td>
  </tr>
 </table>
+ <br>
 
 Random Forest is quite good as catching the non linear relationships between features, and it might be a reason why it performed quite well for this task, 
 compared to good old logistic regression. However, the feature importance analysis doesn't bring us much about the topic relevance for predicting the speaker gender.
@@ -258,9 +259,9 @@ Each topic vector is then computed as the centroid of the found clusters.
 We look up to the sky and here are the top 10 main topics in the clouds. The first one deals with hope and solutions, the second and third ones 
 are much more pessimistic, and could present the disasters incurred by global warming along with the scarceness of the measures taken so far to prevent them. 
 At the fourth position, water related issues are raised, then come again some disasters and we end on the fith one with a more optimistic note, namely all the solutions that
-we have at our disposal. The sixth topic follows on the solutions, while the seventh brings forward recycling. The nineth points out pollution and polluters while the last one is more generally dealing with ecology.
+we have at our disposal. The sixth topic follows on the solutions, while the seventh brings forward recycling. The nineth points out pollution and polluters while the last one is more generally dealing with ecology. <br>
 
-  <table>
+<table class="center">
  <tr>
   <th> Top 10 topics...     </th>
   <th> ...for all genders </th>
@@ -286,6 +287,7 @@ we have at our disposal. The sixth topic follows on the solutions, while the sev
   <td> <img src="assets/9_wc.jpg" alt="Trulli" width="300" height="300"> </td>
  </tr>
 </table>
+ <br>
 
 Below you can explore and compare the top 20 topics brought by our speakers. Each topic name refers to the most weighted word in the given topic. Epa stands for the US Environmental Protection Agency and iot for the Internet of Things.
 
@@ -294,10 +296,9 @@ Below you can explore and compare the top 20 topics brought by our speakers. Eac
 Let's climb again, with our two mountain guides, Logistic Regression and Random Forest. We took the same number of quotes for men and women speakers
 and we infer the top 20 topics for each quote. And here are the results ! We reached a new summit, and the clouds are starting to make way for the sunshine. 
 We reached almost as good results as from word only predictions. Dear guest speaker, tell me what you are talking about and I can predict with 56% of chance whether you're
-a man or a woman. Well, that is not amazing yet... 
+a man or a woman. Well, that is not amazing yet...  <br>
 
-
- <table>
+<table class="center">
  <tr>
   <th> </th>
   <th> Random Forest </th>
@@ -319,6 +320,7 @@ a man or a woman. Well, that is not amazing yet...
   <td> 0.541  </td>
  </tr>
 </table>
+ <br>
  
  
 Let's dwell for a second anyway, grab a pair of binoculars somewhere and inspect our logistic regression coefficients.
@@ -346,9 +348,9 @@ about their speaker occupation. Have you already spot the "hoax" word into Trump
 
 <img src="assets/Word_clouds_males.jpg" alt="Trulli" class=center width="800" height="800">
  
-For a last time, we predict with logistic regression and random forest classifier.
+For a last time, we predict with logistic regression and random forest classifier. <br>
 
-<table>
+<table class="center">
  <tr>
   <th> </th>
   <th> Random Forest </th>
@@ -370,7 +372,7 @@ For a last time, we predict with logistic regression and random forest classifie
   <td> 0.697  </td>
  </tr>
 </table>
- 
+ <br>
  
 Our dataset was quite imbalanced this time, and even if we have a higher accuracy for random forest classifier, it is not meaningful since it wasn't able to catch most of 
 the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice ! 
@@ -399,9 +401,9 @@ So we looked at the differences between the two genders. We visualized the densi
 {% include quotations_density.html %}
 
 
-We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. You can find below examples of positive and negative quotes. 
+We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. You can find below examples of positive and negative quotes.  <br>
 
- <table>
+<table class="center">
  <tr>
   <th> Examples quotations with negative score </th>
   <th> Score </th>
@@ -433,7 +435,8 @@ We therefore looked to see if there were differences between positive and negati
   <td>  -0,9538  </td>
  </tr>
 </table>
-
+<br>
+ 
 We can see that the positive quotes represent <b>half</b> of all quotes. And as seen previously, the proportion between men and women of positive and negative quotes is the same. 
 {% include scorennp.html %}
 
@@ -476,7 +479,7 @@ Regarding the nouns, the most three used, for both gender, are <i>people, climat
  <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="100" height="200">
  
 <h4> Adjectives </h4>
-Which _adjectives_ are used most by men and which by women?
+Which <i>adjectives</i> are used most by men and which by women?
 
 {% include adj_freq.html %}
 
@@ -532,8 +535,9 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
  
  
  <h2> The pandas team 🐼  </h2>
+<br>
 
- <table>
+<table class="center">
  <tr>
   <th> Brognart Blanche </th>
   <th> Descourtils Philippine     </th>
