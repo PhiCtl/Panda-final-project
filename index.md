@@ -506,7 +506,7 @@ On the use of adverbs, it can be noted that the three most used by both genders 
  
   ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 
- <img src="adv_freq.jpg" alt="Trulli">
+ <img src="assets/adv_freq.jpg" alt="Trulli">
 
 <h2> Conclusion </h2>
 
