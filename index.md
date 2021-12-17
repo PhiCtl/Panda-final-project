@@ -5,12 +5,16 @@
 div{
  text-align: justify}
 </style>
-</head>
-<body>
- <h2>HTML Links </h2>
+
+
+ 
+ <h2> 
 # Who does really care about climate change ?
 ## A gender driven journey throughout environment related topics in the media
-
+ </h2>
+ </head>
+ <body>
+  
 ## Introduction
 
 <div> 
