@@ -496,6 +496,42 @@ On the use of adverbs, it can be noted that the three most used by both genders 
  <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="500" height="500">
 
 <h2> Conclusion </h2>
+ 
+What a nice adventure ! We hope you enjoyed this datatrip with the Panda team throughout ecology, environment and climate change. We made some beautiful discoveries. 
+
+First of all, from a statistical point of view, speakers seem quite committed regarding the topics that were brought up. They present current issues such as pollution and carbon emissions along with their long term consequences which are clearly stated by each gender such as animal extinction, water shortage. They urge to take actions and some solutions are discussed : sustainability, involvement of government
+
+
+Regarding our research on the topic of ecology through the genres, we didn’t have as many shades as expected.  
+
+However, some elements can be noticed : 
+<ul>
+ <li> First of all, the most prevalent topics used to predict gender are gender-biased, such as "women" or "fashion", and environmental related topics come after. Nevertheless, both genders contribute to the environment field. </li>
+
+ <li> Secondly, when studying the topics, nouns and adjectives, women tend to be focus on the community aspect and are aware of urgent actions to take. </li>
+
+ <li> Thirdly, dealing with the word based analysis, to support the commitment of both gender, we can see than mainly action verbs and statement adverbs are used </li>
+</ul>
+  
+However the quotes seem to be very politicized. Indeed, as mentioned above, most of the most important speakers are politicians. For instance, in the top 3 speakers for each gender, two out of three are involved in politics, in the United States or in Europe. As an improvement, it would have been interesting to study the occupation of each speaker and link it to what is said. As more speakers are politicians, we can infer that the gender bias tends to vanish towards a more neutral speech.
+
+Moreover, quotations are mainly classified as neutral, and then positive, while we would have expected more negative components, given this has become a global world wide crisis. 
+
+Thus the conclusions and observations we can make on our dataset should only be taken with great caution. Our dataframe of quotes on ecology has many biases. 
+
+First of all, we can highlight some issues with the way data was collected : 
+ <ul>
+  <li> First, we used a greedy approach to select the environmental linked quotes and we might have missed some.
+
+  <li> Secondly, the speakers were selected so that the probability is greater than 0.5. Thus we are not entirely sure of our results and this can lead to mistakes in the gender of the speakers. 
+  <li> Finally some speakers could be wrongly attributed by the algorithm which can also lead to some errors. 
+ </ul>
+ 
+The nature of the data itseld leads to some biases
+All the quotes are extracted from English speaking only newspapers. Thus, it’s not totally representative of the ecology. In fact, it concerns mostly modern world developed and rich countries. 
+Moreover, quotes were first extracted and processed by journalists to support a reasoning , and might not fully express what the speaker intended. We're dealing here with reported speech, and not direct quotations.
+
+In a nutshell, our road throughout those quotes sketched some gender trends and supported some of our hypotheses, and can be further refined with a speaker specific approach or taking into account much more context about the speaker and the media the quote comes from !
 
  <h2> The pandas team 🐼  </h2>
  <img src="assets/verbs_freq.jpg" alt="Trulli">
@@ -508,10 +544,10 @@ On the use of adverbs, it can be noted that the three most used by both genders 
   <th> Petronio Stella    </th>
  </tr>
  <tr>
-  <td> <img src="photo.jpg" alt="Trulli"> </td>
-  <td> <img src="Philippine.jpg" alt="Trulli"> </td>
-  <td> <img src="WhatsApp Image 2021-12-17 at 15.05.58.jpeg"> </td>
-  <td> <img src="CV2.jpg" alt="Trulli">  </td>
+  <td> <img src="assets/photo.jpg" alt="Trulli"> </td>
+  <td> <img src="assets/Philippine.jpg" alt="Trulli"> </td>
+  <td> <img src="assets/WhatsApp Image 2021-12-17 at 15.05.58.jpeg"> </td>
+  <td> <img src="assets/CV2.jpg" alt="Trulli">  </td>
  </tr>
  <tr>
   <th> The gégé </th>
