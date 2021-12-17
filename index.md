@@ -20,7 +20,6 @@ img { width:100%
  }
 </style>
 
- <title>  Who does really care about climate change ?  </title>
  <h1> A gender driven journey throughout environment related topics in the media </h1>
  </head>
  <body>
@@ -390,7 +389,7 @@ For a last time, we predict with logistic regression and random forest classifie
  <br>
  
 Our dataset was quite imbalanced this time, and even if we have a higher accuracy for random forest classifier, it is not meaningful since it wasn't able to catch most of 
-the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice !
+the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice!
  <br> 
 
 <img src="assets/logistic_regression_confusion_matrix_famous_speakers.jpg" alt="Trulli">
@@ -530,7 +529,7 @@ What a nice adventure ! We hope you enjoyed this datatrip with the Panda team th
 
 First of all, from a statistical point of view, speakers seem quite committed regarding the topics that were brought up. They present current issues such as pollution and carbon emissions along with their long term consequences which are clearly stated by each gender such as animal extinction, water shortage. They urge to take actions and some solutions are discussed : sustainability, involvement of government. Regarding our research on the topic of ecology through the genres, we didn’t have as many shades as expected.  
 
-However, some elements can be noticed : 
+However, some elements can be noticed: 
 <ul>
  <li> First of all, the most prevalent topics used to predict gender are gender-biased, such as "women" or "fashion", and environmental related topics come after. Nevertheless, both genders contribute to the environment field. </li>
 
@@ -556,7 +555,7 @@ First of all, we can highlight some issues with the way data was collected :
  
 The nature of the data itseld leads to some biases. All the quotes are extracted from English speaking only newspapers. Thus, it’s not totally representative of the ecology. In fact, it concerns mostly modern world developed and rich countries. Moreover, quotes were first extracted and processed by journalists to support a reasoning , and might not fully express what the speaker intended. We're dealing here with reported speech, and not direct quotations.
 
-In a nutshell, our road throughout those quotes sketched some gender trends and supported some of our hypotheses, and can be further refined with a speaker specific approach or taking into account much more context about the speaker and the media the quote comes from ! <br>
+In a nutshell, our road throughout those quotes sketched some gender trends and supported some of our hypotheses, and can be further refined with a speaker specific approach or taking into account much more context about the speaker and the media the quote comes from! <br>
  <br>
 
  
