@@ -40,7 +40,7 @@ Can we still find some clues from these quotes, supporting the hypothesis that e
 
   <p style="font-style: italic;">Side notes : we performed our analysis with binary gender (male or female) only for the sake of simplicity.</p>
 
-And now, let's jump in !
+And now, let's jump in!
  
 <h2> Our storyteller </h2>
 <h3> Quotebank processed dataset </h3>
