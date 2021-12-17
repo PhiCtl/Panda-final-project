@@ -113,6 +113,7 @@ We're reaching a cross road, and before following the path of topic analysis, le
   <td> 0.485  </td>
   <td> 0.564  </td>
  </tr>
+</table>
 
  Given all the pieces of information coming from the words that we have at our disposal, across all quotes, we cannot make a very significative statement about the speaker gender. This can be explained by the following fact. Even if we artificially balanced the dataset, we have very few quotes attributed to women, and thus less diversity in the words. Therefore our classifiers weren't able to grasp a meaningful aspect linked to gender out of it. We can nevertheless explore how our more performant classifier made its choices, taking a look at each coefficient importance into the task of predicting whether the speaker is a woman or not. The more positive the coefficient, the more weight it gives towards predicting "woman", the more negative, the better it is to predict "man".
 
@@ -138,7 +139,74 @@ LDA managed to extract <b>7 topics</b> that are presented in details below :
 | 1            | 0.015*"work     | 0.013*"community" | 0.012*"new"            | 0.012*"help"     | solutions                  |
 | 6            | 0.023*"water"   | 0.012*"feel"      | 0.010*"number"         | 0.009*"warming"  | resources                  |
 
-
+<table>
+ <tr>
+  <th> Topic number </th>
+  <th> Topic main word </th>
+  <th> Second word </th>
+  <th> Third word  </th>
+  <th> Fourth word </th>
+  <th> Description interpretation </th>
+ </tr>
+ <tr>
+  <td>  3 </td>
+  <td> 0.068*"climate" </td>
+  <td> 0.064*"change" </td>
+  <td> 0.039*"climate_change" </td>
+  <td> 0.016*"emission" </td>
+  <td> climate change </td>
+ </tr>
+ <tr>
+  <td>  2 </td>
+  <td> 0.030*"people" </td>
+  <td> 0.022*"want" </td>
+  <td> 0.016*"need" </td>
+  <td>  0.011*"way"  </td>
+  <td> action </td>
+ </tr>
+ <tr>
+  <td>  4  </td>
+  <td> 0.028*"year" </td>
+  <td> 0.028*"go" </td>
+  <td> 0.022*"people" </td>
+  <td>  0.021*"think"  </td>
+  <td> long term consequences </td>
+ </tr>
+ <tr>
+  <td>  7   </td>
+  <td> 0.025*"long" </td>
+  <td> 0.018*"term" </td>
+  <td> 0.018*"level"  </td>
+  <td>  0.013*"air"  </td>
+  <td> long term consequences </td>
+ </tr>
+ <tr>
+  <td>  5   </td>
+  <td>  0.014*"use" </td>
+  <td> 0.011*"food"</td>
+  <td> 0.011*"plant" </td>
+  <td>  0.011*"year"</td>
+  <td> resources </td>
+ </tr>
+ <tr>
+  <td>  1   </td>
+  <td>  0.015*"work" </td>
+  <td>0.013*"community"</td>
+  <td> 0.012*"new" </td>
+  <td>  0.012*"help"</td>
+  <td> solutions </td>
+ </tr>
+ <tr>
+  <td>  6  </td>
+  <td> 0.023*"water" </td>
+  <td> 0.012*"feel"</td>
+  <td> 0.010*"number" </td>
+  <td>  0.009*"warming"</td>
+  <td> resources </td>
+ </tr>
+</table>
+ 
+ 
 We can really explore each topic using pyLDAvis tool. We can manually extract the meaningful topics, and see how close the topics are (in the blob graph below). Moreover, each topic word is nicely detailed. 
 
 As a side note, the size of the bubble represents the relevance of the topic in the corpus. The associate words are displayed on the left. 
@@ -171,6 +239,28 @@ as many quotes from men than women speakers. Finally, we took care of tuning ran
 | Precision            | 0.741         | 0.524               |
 | Recall               | 0.747         | 0.463               |
 
+ <table>
+ <tr>
+  <th> </th>
+  <th> Random Forest </th>
+  <th> Logistic regression </th>
+ </tr>
+ <tr>
+  <td>  Accuracy on test set </td>
+  <td> 0.741  </td>
+  <td> 0.518  </td>
+ </tr>
+ <tr>
+  <td> Precision  </td>
+  <td> 0.741 </td>
+  <td> 0.524  </td>
+ </tr>
+ <tr>
+  <td> Recall </td>
+  <td> 0.747   </td>
+  <td> 0.463  </td>
+ </tr>
+</table>
 
 Random Forest is quite good as catching the non linear relationships between features, and it might be a reason why it performed quite well for this task, 
 compared to good old logistic regression. However, the feature importance analysis doesn't bring us much about the topic relevance for predicting the speaker gender.
@@ -203,6 +293,25 @@ Top 10 topics...                     |  ...for all genders
 :-----------------------------------:|:--------------------------------------:
 ![assets/8_wc.jpg](assets/8_wc.jpg)  |  ![assets/9_wc.jpg](assets/9_wc.jpg)
 
+ 
+  <table>
+ <tr>
+  <th> Top 10 topics...     </th>
+  <th> ...for all genders </th>
+ </tr>
+ <tr>
+  <td>  Accuracy on test set </td>
+  <td> 0.741  </td>
+ </tr>
+ <tr>
+  <td> Precision  </td>
+  <td> 0.741 </td>
+ </tr>
+ <tr>
+  <td> Recall </td>
+  <td> 0.747   </td>
+ </tr>
+</table>
 
 Below you can explore and compare the top 20 topics brought by our speakers. Each topic name refers to the most weighted word in the given topic. Epa stands for the US Environmental Protection Agency and iot for the Internet of Things.
 
@@ -221,6 +330,30 @@ a man or a woman. Well, that is not amazing yet...
 | Recall               | 0.488         | 0.541               |
 
 
+ <table>
+ <tr>
+  <th> </th>
+  <th> Random Forest </th>
+  <th> Logistic regression </th>
+ </tr>
+ <tr>
+  <td>  Accuracy on test set </td>
+  <td> 0.562  </td>
+  <td> 0.559  </td>
+ </tr>
+ <tr>
+  <td> Precision  </td>
+  <td> 0.557  </td>
+  <td> 0.56  </td>
+ </tr>
+ <tr>
+  <td> Recall </td>
+  <td> 0.488    </td>
+  <td> 0.541  </td>
+ </tr>
+</table>
+ 
+ 
 Let's dwell for a second anyway, grab a pair of binoculars somewhere and inspect our logistic regression coefficients.
 Again, we can find some similarities with the word only analysis from a few valleys ago, and it's quite interesting. Climate topics are pushed into the background, and more gender related
 topics are brought to the foreground. Again, the most useful coefficient for predicting whether the speaker is a woman or not is simply the topic... "women" ! Some topics are very
@@ -258,7 +391,30 @@ For a last time, we predict with logistic regression and random forest classifie
 | Precision            | 0.938         | 0.258               |
 | Recall               | 0.15          | 0.697               |
 
-
+<table>
+ <tr>
+  <th> </th>
+  <th> Random Forest </th>
+  <th> Logistic regression </th>
+ </tr>
+ <tr>
+  <td>  Accuracy on test set </td>
+  <td> 0.883  </td>
+  <td> 0.686  </td>
+ </tr>
+ <tr>
+  <td> Precision  </td>
+  <td> 0.938  </td>
+  <td> 0.258   </td>
+ </tr>
+ <tr>
+  <td> Recall </td>
+  <td> 0.15    </td>
+  <td> 0.697  </td>
+ </tr>
+</table>
+ 
+ 
 Our dataset was quite imbalanced this time, and even if we have a higher accuracy for random forest classifier, it is not meaningful since it wasn't able to catch most of 
 the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice ! 
 
@@ -297,6 +453,38 @@ We therefore looked to see if there were differences between positive and negati
 | "This is really a vote of no confidence  because we believe that the system has become captive" | 0,2247 | "This is not over. The state agencies have failed the  process." | -0,250 |
 | "There are inspiring examples across Africa.  We must take the opportunity to share best practices  andlearn from each other."  | 0,9403 | "There is anger, despair and horror amoung residents -  who fear further years of noise, dust, pollution and the spread of cancer." | -0,9538 |
 
+ <table>
+ <tr>
+  <th> Examples quotations with negative score </th>
+  <th> Score </th>
+  <th> Examples quotations with positive score </th>
+  <th> Score </th>
+ </tr>
+ <tr>
+  <td>  "MeToo has created an environment of  empathy. The biggest positive is that now people don't dismiss it." </td>
+  <td> 0,6808  </td>
+  <td> "It's indicative of a very worrying trend. If we don't  reign in global warming pollution,about a million species or 15 percent of species on earth are vulnerable to extinction  from climate change." </td>
+  <td> -0,5267  </td>
+ </tr>
+ <tr>
+  <td> "Our Planet and Environment is something we all  cherish greatly"  </td>
+  <td>  0,9020 </td>
+  <td> "It's just a technological engineering problem to solve on what  to do with the waste"   </td>
+  <td>  -0,5719 </td>
+ </tr>
+ <tr>
+  <td> "This is really a vote of no confidence  because we believe that the system has become captive" </td>
+  <td>  0,2247   </td>
+  <td> "This is not over. The state agencies have failed the  process."   </td>
+  <td>  -0,250 </td>
+ </tr>
+  <tr>
+  <td> "There are inspiring examples across Africa.  We must take the opportunity to share best practices  andlearn from each other." </td>
+  <td>  0,9403  </td>
+  <td> "There is anger, despair and horror amoung residents -  who fear further years of noise, dust, pollution and the spread of cancer."  </td>
+  <td>  -0,9538  </td>
+ </tr>
+</table>
 
 We can see that the positive quotes represent <b>half</b> of all quotes. And as seen previously, the proportion between men and women of positive and negative quotes is the same. 
 {% include scorennp.html %}
