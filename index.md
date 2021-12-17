@@ -87,7 +87,7 @@ We're reaching a cross road, and before following the path of topic analysis, le
 
 {% include coefs_logistic_gender_prediction.html %}
 
-Two interesting facts can be highlighted there. First of all, the most prominent words are gender related, such as <p style="font-style: italic;">girl, woman, guy,</p> or <p style="font-style: italic;">husband</p>. Secondly, action verbs like <p style="font-style: italic;">shall, execute</p> and <p style="font-style: italic;">operate</p> are used to classify "man", while more diverse types of words are linked to predicting "woman". We managed to pick one interesting aspect from our guests !
+Two interesting facts can be highlighted there. First of all, the most prominent words are gender related, such as <i>girl, woman, guy,</i> or <i>husband</i>. Secondly, action verbs like <i>shall, execute</i> and <i>operate</i> are used to classify "man", while more diverse types of words are linked to predicting "woman". We managed to pick one interesting aspect from our guests !
 
 We decide to turn left, and discover the topics landscapes. Don't loose the track, and follow us !
 
@@ -96,9 +96,11 @@ We decide to turn left, and discover the topics landscapes. Don't loose the trac
  _shall_, _execute_ and _operate_
  
 <h3> Where LDA comes into play </h3>
-<p style="font-style: bold;">Test bold text</p>
-Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed **248'211 quotes**, among which we have **47'374 women and 200'837 men**. So **20%** (only...) of our guests are women, and the **80%** left are men. 
-LDA managed to extract **7 topics** that are presented in details below : </p>  
+<i>Test bold text</i>
+Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed <b>248'211 quotes</b>, among which we have <b>47'374 women and 200'837 men</b>. So <b>20%</b> (only...) of our guests are women, and the <b>80%</b> left are men. 
+LDA managed to extract <b>7 topics</b> that are presented in details below : </p>  
+ **248'211 quotes**
+ **47'374 women and 200'837 men**
 
 | Topic number | Topic main word | Second word       | Third word             | Fourth word      | Description interpretation |
 |--------------|-----------------|-------------------|------------------------|------------------|----------------------------|
@@ -233,7 +235,7 @@ For a last time, we predict with logistic regression and random forest classifie
 
 
 Our dataset was quite imbalanced this time, and even if we have a higher accuracy for random forest classifier, it is not meaningful since it wasn't able to catch most of 
-the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly **95%** of all women and men speakers, which is quite nice ! 
+the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice ! 
 
 ![assets/logistic_regression_confusion_matrix_famous_speakers.jpg](assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
 
@@ -250,7 +252,7 @@ This second trip has come to an end and we come back to our starting point with 
  
 Now let’s move on to the exploration of the difference between the sentimental score of the quotes between men and women. For this purpose we used the ntlk library. 
 
-First let’s have a look at the distribution of the sentimental score of the quotes. We have a huge peak for neutral sentiment. Of all the quotations on ecology, we have ** 81663** that have a score of 0, i.e 27% of the total. But what does a score of 0 mean? It is for all the quotes that simply give a state, an information like for example "There are not only channel to us” or “less bleached than reefs further offshore”. 
+First let’s have a look at the distribution of the sentimental score of the quotes. We have a huge peak for neutral sentiment. Of all the quotations on ecology, we have <b>81663</b> that have a score of 0, i.e <b>27%</b> of the total. But what does a score of 0 mean? It is for all the quotes that simply give a state, an information like for example "There are not only channel to us” or “less bleached than reefs further offshore”. 
 
 
 {% include quotations_sentiment_all.html %}
@@ -271,17 +273,18 @@ We therefore looked to see if there were differences between positive and negati
 | "There are inspiring examples across Africa.  We must take the opportunity to share best practices  andlearn from each other."  | 0,9403 | "There is anger, despair and horror amoung residents -  who fear further years of noise, dust, pollution and the spread of cancer." | -0,9538 |
 
 
-We can see that the positive quotes represent **half** of all quotes. And as seen previously, the proportion between men and women of positive and negative quotes is the same. 
+We can see that the positive quotes represent <b>half</b> of all quotes. And as seen previously, the proportion between men and women of positive and negative quotes is the same. 
 {% include scorennp.html %}
 
-To complete our study, we plotted the distribution of positive versus negative citations by making the absolute value of all negative scores. We thus observe in general more positive quotations than negative ones. But the most surprising thing is that we have a bigger difference for scores higher than 0,4. Thus for quotes with a score above 0.4, there are **2.4** times more positive quotes than negative ones, while for lower scores there are only **1.5** times more positive quotes. 
+To complete our study, we plotted the distribution of positive versus negative citations by making the absolute value of all negative scores. We thus observe in general more positive quotations than negative ones. But the most surprising thing is that we have a bigger difference for scores higher than 0,4. Thus for quotes with a score above 0.4, there are <b>2.4</b> times more positive quotes than negative ones, while for lower scores there are only <b>1.5</b> times more positive quotes. 
 
 {% include evolutions_scores.html %}
 
-We can therefore suppose that the speakers moderate themselves more to express negation. However ecology is a subject that worries a lot nowadays, the lexical fields of guilt and fear govern this topic. This [study](https://journals.sagepub.com/doi/full/10.1177/0539018421996264) studied the emotions when talking about ecology and found that more negative emotions are expressed in this topic. Thus we have interesting and surprising results compared to what we had imagined. 
+We can therefore suppose that the speakers moderate themselves more to express negation. However ecology is a subject that worries a lot nowadays, the lexical fields of guilt and fear govern this topic. <a href="https://journals.sagepub.com/doi/full/10.1177/0539018421996264">This study</a> studied the emotions when talking about ecology and found that more negative emotions are expressed in this topic. Thus we have interesting and surprising results compared to what we had imagined. 
 
 However, it is important to note here that the database only lists quotes from speakers listed in newspapers, so these quotes do not represent everyone's sentences. The quotation of newspapers are therefore maybe biased. 
-
+ 
+[study](https://journals.sagepub.com/doi/full/10.1177/0539018421996264) 
 <h2> What are the words most used by males and females? </h2>
 
 Once we understand and recognize the major topics of our speakers, let's go on to understand how, that is, with which verbs, adjectives, adverbs, nouns, these speakers go forward in addressing and discussing the different topics!
@@ -290,7 +293,7 @@ Once we understand and recognize the major topics of our speakers, let's go on t
 
 We did a deep analysis to find out which are the most used words among the female and male speakers. We used a _Word Frequency Analysis_ tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. 
 
-For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the _word clouds_ visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of quotations, where the size of each word is proportional to the number of times it has been counted in the set of all quotations. These visualisations are interesting, and they can be a quick and direct way to give an overview of how our speakers are talking.
+For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the <i>word clouds</i> visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of quotations, where the size of each word is proportional to the number of times it has been counted in the set of all quotations. These visualisations are interesting, and they can be a quick and direct way to give an overview of how our speakers are talking.
 
 
 <h4> Verbs </h4>
@@ -298,7 +301,7 @@ For each study group of words considered (namely between verbs, nouns, adjective
 Which _verbs_ are used most by men and which by women?
 
 {% include verbs_freq.html %}
-From the study of the verbs, it can be noticed that the three most used are <p style="font-style: italic;">go, think</p> and <p style="font-style: italic;">need</p>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
+From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
   ![assets/verbs_freq.jpg](assets/verbs_freq.jpg)
 
@@ -311,7 +314,7 @@ Which _nouns_ are used most by men and which by women?
 
 {% include nouns_freq.html %}
 
-Regarding the nouns, the most three used, for both gender, are <p style="font-style: italic;">people, climate, change</p>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <p style="font-style: italic;">health, life</p> and <p style="font-style: italic;">science</p> seem only used from female speakers. On the other hand, we observe that the nouns <p style="font-style: italic;">level, carbon, business</p> are only used from male speakers. 
+Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
 
   ![assets/nouns_freq.jpg](assets/verbs_freq.jpg)
  _people_, _climate_, _change_
@@ -323,7 +326,7 @@ Which _adjectives_ are used most by men and which by women?
 
 {% include adj_freq.html %}
 
-Under the study of the adjectives, it can be seen that the three most used are <p style="font-style: italic;">enviromental, good</p> and <p style="font-style: italic;">important</p> for both gender. Furthermore, it can be noticed a greater use of the <p style="font-style: italic;">global</p> and <p style="font-style: italic;">high</p> adjectives from the side of the male speakers. 
+Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. 
 
   ![assets/adj_freq.jpg](assets/adj_freq.jpg)
 
@@ -332,12 +335,12 @@ _enviromental_, _good_ and _important_
  
 <h4> Adverbs  </h4>
 
-Which <p style="font-style: italic;">adverbs</p> are used most by men and which by women?
+Which <i>adverbs</i> are used most by men and which by women?
  _adverbs_
  
 {% include adverbs_freq.html %}
 
-On the use of adverbs, it can be noted that the three most used by both genders are <p style="font-style: italic;">forward, actutally</p> and <p style="font-style: italic;">away</p> (with a majority from the female speakers), whereas <p style="font-style: italic;">truly, hard, directly, exactly, way</p> seem to be used only by male speakers and <p style="font-style: italic;">well, likely, highly, increasingly, obviously</p> only by female speakers.
+On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers.
  
  
 _forward_, _actutally_, _away_
