@@ -138,19 +138,26 @@ We did a deep analysis to find out which are the most used words among the femal
 For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the _word clouds_ visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of text, where the size of each word is proportional to the number of times it has been counted in the quotations. These visualisations are interesting, and they can be a quick way to give an overview of how our speakers are talking.
 
 #### Verbs
+Which types of _verbs_ are used most by men and which by women?
 {% include verbs_freq.html %}
 
 ![_includes/verbs_freq.jpg](_includes/verbs_freq.jpg)
 
 #### Nouns
+Which types of _nouns_ are used most by men and which by women?
 {% include nouns_freq.html %}
 
 ![_includes/nouns_freq.jpg](_includes/verbs_freq.jpg)
 
 #### Adjectives
+Which types of _adjectives_ are used most by men and which by women?
 {% include adj_freq.html %}
 
+![_includes/adj_freq.jpg](_includes/adj_freq.jpg)
+
 #### Adverbs 
+Which types of _adverbs_ are used most by men and which by women?
+
 {% include adverbs_freq.html %}
 
 ![_includes/adv_freq.jpg](_includes/adv_freq.jpg)
