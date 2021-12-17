@@ -142,12 +142,16 @@ Which _verbs_ are used most by men and which by women?
 
 {% include verbs_freq.html %}
 
+From the study of the verbs, it can be noticed that the three most used are _go_, _think_, _need_. The difference between the genders is very slight, however it can be noted that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers. 
+
 ![_includes/verbs_freq.jpg](_includes/verbs_freq.jpg)
 
 #### Nouns
 Which _nouns_ are used most by men and which by women?
 
 {% include nouns_freq.html %}
+
+Regarding the nouns, the most three used, for both gender, are _people_, _climate_, _change_. However, all three of the latter seem to be used more by females spekaers, which could confirm our hypothesis that females are probably more involved in ecology topics.
 
 ![_includes/nouns_freq.jpg](_includes/verbs_freq.jpg)
 
@@ -162,6 +166,8 @@ Which _adjectives_ are used most by men and which by women?
 Which _adverbs_ are used most by men and which by women?
 
 {% include adverbs_freq.html %}
+
+On the use of adverbs, it can be noted that the three most used by both genders are _forward_, _actutally_, and _away_ (with a majority from the female speakers), whereas _truly_, _hard_, _directly_, _exactly_, _way_ seem to be used only by male speakers and _well_, _likely_, _highly_, _increasingly_, _obviously_ only by female speakers.
 
 ![_includes/adv_freq.jpg](_includes/adv_freq.jpg)
 
