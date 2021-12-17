@@ -571,10 +571,10 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
   <th> Petronio Stella    </th>
  </tr>
  <tr>
-  <td> <img src="assets/photo_blanche.jpg" width="400" height="400"> </td>
-  <td> <img src="assets/photo_phil.jpeg" width="400" height="400"> </td>
-   <td> <img src="assets/photo_alix.jpeg" width="400" height="400" > </td>
-  <td> <img src="assets/photo_stella.jpg" width="400" height="400" >  </td>
+  <td> <img src="assets/photo_blanche.jpg" width="500" height="400"> </td>
+  <td> <img src="assets/photo_phil.jpeg" width="500" height="400"> </td>
+   <td> <img src="assets/photo_alix.jpeg" width="500" height="400" > </td>
+  <td> <img src="assets/photo_stella.jpg" width="500" height="400" >  </td>
  </tr>
 </table>
 
