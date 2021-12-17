@@ -340,13 +340,14 @@ Let's have a look at what they actually say and train a classifier to decide, fr
 We'll walk part of the way with Hillary Clinton, Greta Thunberg and Angela Merkel. Here are the two main topics they brought into light about environment.
 Unfortunately, we don't have many quotes available, so our algorithm was only able to infer two of three topics for each. We can nevertheless observe the emphasis
 Greta puts on the "crisis" state we're in and the need to "act".
-
+<br>
 <img src="assets/Word_clouds_females.jpg" alt="Trulli" class=center width="800" height="800">
-
+<br>
 Now, we'll also join Donald Trump, Pope Francis and Barack Obama. Here are their three main contributions to our topics. Those are quite precise and reveal a lot
-about their speaker occupation. Have you already spot the "hoax" word into Trump's word clouds... ?
+about their speaker occupation. Have you already spot the "hoax" word into Trump's word clouds... ?<br>
 
 <img src="assets/Word_clouds_males.jpg" alt="Trulli" class=center width="800" height="800">
+ <br>
  
 For a last time, we predict with logistic regression and random forest classifier. <br>
 
@@ -375,10 +376,10 @@ For a last time, we predict with logistic regression and random forest classifie
  <br>
  
 Our dataset was quite imbalanced this time, and even if we have a higher accuracy for random forest classifier, it is not meaningful since it wasn't able to catch most of 
-the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice ! 
+the women speaker quotes. Below are presented the results for logistic regression. It could guess correctly <b>95%</b> of all women and men speakers, which is quite nice !<br> 
 
 <img src="assets/logistic_regression_confusion_matrix_famous_speakers.jpg" alt="Trulli">
-
+<br>
 Let's end up this little tour with a closer analysis of the logistic regression coefficients. Environmental topics are balanced between both gender, but we can still notice
 that women tend to underline more the "crisis" and the "community" aspects. Note the prevalence of the topics "us" and "ourselves". 
 
@@ -454,7 +455,7 @@ Once we understand and recognize the major topics of our speakers, let's go on t
 
 <h3> Where and how WFA comes into play </h3>
 
-We did a deep analysis to find out which are the most used words among the female and male speakers. We used a _Word Frequency Analysis_ tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. 
+We did a deep analysis to find out which are the most used words among the female and male speakers. We used a <i>Word Frequency Analysis</i> tool just to count the occurrence of each noun, verb, adverb and adjective for all the speakers. 
 
 For each study group of words considered (namely between verbs, nouns, adjectives and adverbs), we present a plot with the 30 most used words between male and female speakers. In the respective plots, it can be seen which verbs, adjectives, nouns and adverbs are most used by a male speaker and which by a female speaker and, furthermore, which are used almost equally between the two genders. Moreover we reported the <i>word clouds</i> visualization, which shows a random display of all the words (between verbs, nouns, adjectives and adverbs, respetively) in a source of quotations, where the size of each word is proportional to the number of times it has been counted in the set of all quotations. These visualisations are interesting, and they can be a quick and direct way to give an overview of how our speakers are talking.
 
@@ -464,9 +465,9 @@ For each study group of words considered (namely between verbs, nouns, adjective
 Which <i>verbs</i> are used most by men and which by women?
 
 {% include verbs_freq.html %}
-From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
+From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs <i>go</i> and <i>get</i> by male speakers than female spekers. <br>
 
- <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="200" height="300">
+ <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="100" height="300">
  
 <h4> Nouns </h4>
 
@@ -474,28 +475,28 @@ Which <i>nouns</i> are used most by men and which by women?
 
 {% include nouns_freq.html %}
 
-Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
+Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. <br>
 
- <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="100" height="200">
+ <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="100" height="300">
  
 <h4> Adjectives </h4>
 Which <i>adjectives</i> are used most by men and which by women?
 
 {% include adj_freq.html %}
 
-Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. 
+Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. <br>
 
  <img src="assets/adj_freq.jpg" alt="Trulli" class=center width="300" height="500">
-
+<br>
 <h4> Adverbs  </h4>
 
 Which <i>adverbs</i> are used most by men and which by women?
  
 {% include adverbs_freq.html %}
 
-On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers.
+On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers. <br>
 
- <img src="assets/adv_freq.jpg" alt="Trulli" class=center>
+ <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="100" height="300">
 
 <h2> Conclusion </h2>
  
