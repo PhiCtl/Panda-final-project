@@ -128,13 +128,13 @@ _TODO : comment on the top features, compare results to word based prediction an
 
 _TODO : present speakers_
 
-![WC_Women](/Panda-final-project/assets/Word_clouds_females.jpg)
+![/Panda-final-project/assets/Word_clouds_females.jpg](/Panda-final-project/assets/Word_clouds_females.jpg)
 
-![WC_Men](/Panda-final-project/assets/Word_clouds_males.jpg)
+![/Panda-final-project/assets/Word_clouds_males.jpg](/Panda-final-project/assets/Word_clouds_males.jpg)
 
 _TODO : present test and comment on results and coefficients_
 
-![Confusion_matrix](/Panda-final-project/assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
+![/Panda-final-project/assets/logistic_regression_confusion_matrix_famous_speakers.jpg](/Panda-final-project/assets/logistic_regression_confusion_matrix_famous_speakers.jpg)
 
 {% include coefs_logistic_gender_topic_prediction_famous_speakers.html %}
 
