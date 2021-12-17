@@ -339,12 +339,12 @@ We'll walk part of the way with Hillary Clinton, Greta Thunberg and Angela Merke
 Unfortunately, we don't have many quotes available, so our algorithm was only able to infer two of three topics for each. We can nevertheless observe the emphasis
 Greta puts on the "crisis" state we're in and the need to "act".
 
-<img src="assets/Word_clouds_females.jpg" alt="Trulli" class=center width="700" height="700">
+<img src="assets/Word_clouds_females.jpg" alt="Trulli" class=center width="800" height="800">
 
 Now, we'll also join Donald Trump, Pope Francis and Barack Obama. Here are their three main contributions to our topics. Those are quite precise and reveal a lot
 about their speaker occupation. Have you already spot the "hoax" word into Trump's word clouds... ?
 
-<img src="assets/Word_clouds_males.jpg" alt="Trulli" class=center width="700" height="700">
+<img src="assets/Word_clouds_males.jpg" alt="Trulli" class=center width="800" height="800">
  
 For a last time, we predict with logistic regression and random forest classifier.
 
@@ -463,7 +463,7 @@ Which <i>verbs</i> are used most by men and which by women?
 {% include verbs_freq.html %}
 From the study of the verbs, it can be noticed that the three most used are <i>go, think</i> and <i>need</i>. In this study case, the difference between the genders is very slight, however it can be observed that there is a prevalence of the use of the verbs _go_ and _get_ by male speakers than female spekers. 
 
- <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="300" height="300">
+ <img src="assets/verbs_freq.jpg" alt="Trulli" class=center width="300" height="500">
  
 <h4> Nouns </h4>
 
@@ -473,7 +473,7 @@ Which <i>nouns</i> are used most by men and which by women?
 
 Regarding the nouns, the most three used, for both gender, are <i>people, climate, change</i>. However, all three of the latter seem to be utilized more by females speakers, which could confirm our hypothesis that females are probably more involved in ecology topic. In addition to this, it is interesting to underline how the nouns <i>health, life</i> and <i>science</i> seem only used from female speakers. On the other hand, we observe that the nouns <i>level, carbon, business</i> are only used from male speakers. 
 
- <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="300">
+ <img src="assets/nouns_freq.jpg" alt="Trulli" class=center width="300" height="500">
  
 <h4> Adjectives </h4>
 Which _adjectives_ are used most by men and which by women?
@@ -482,7 +482,7 @@ Which _adjectives_ are used most by men and which by women?
 
 Under the study of the adjectives, it can be seen that the three most used are <i>enviromental, good</i> and <i>important</i> for both gender. Furthermore, it can be noticed a greater use of the <i>global</i> and <i>high</i> adjectives from the side of the male speakers. 
 
- <img src="assets/adj_freq.jpg" alt="Trulli" class=center width="300" height="300">
+ <img src="assets/adj_freq.jpg" alt="Trulli" class=center width="300" height="500">
 
 <h4> Adverbs  </h4>
 
@@ -492,7 +492,7 @@ Which <i>adverbs</i> are used most by men and which by women?
 
 On the use of adverbs, it can be noted that the three most used by both genders are <i>forward, actutally</i> and <i>away</i> (with a majority from the female speakers), whereas <i>truly, hard, directly, exactly, way</i> seem to be used only by male speakers and <i>well, likely, highly, increasingly, obviously</i> only by female speakers.
 
- <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="300" height="300">
+ <img src="assets/adv_freq.jpg" alt="Trulli" class=center width="300" height="500">
 
 <h2> Conclusion </h2>
  
