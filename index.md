@@ -571,7 +571,7 @@ In a nutshell, our road throughout those quotes sketched some gender trends and 
 <table class="center">
  <tr>
   <th> Brognart Blanche </th>
-  <th> Descourtils Philippine     </th>
+  <th> Des Courtils Philippine     </th>
   <th> Louvet Alix </th>
   <th> Petronio Stella    </th>
  </tr>
