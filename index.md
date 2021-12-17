@@ -9,6 +9,9 @@ div{
   border-collapse: collapse;
   width:100%
  }
+
+img { width:100%
+ }
  
  td, th {
   border: 1px solid #dddddd;
@@ -85,13 +88,6 @@ Concerning Pope Francis, one year out of the 5 seems to stand out: 2015, which c
  
 We're reaching a cross road, and before following the path of topic analysis, let's try to predict, from simple words, whether a given quote speaker was a man or a woman. Each quotation was broken into words and embedded into a Term-frequency Inverse Document Frequency Matrix. Below we present the results from the two simple classifiers we used. We used a perfectly balanced dataset to predict the gender and our accuracy is a bit but not much above random chance (ie. 50%). Logistic regression performed slightly better than random forest on the train set. 
 
-
-|                      | Random Forest | Logistic regression |
-|----------------------|---------------|---------------------|
-| Accuracy on test set | 0.556         | 0.567               |
-| Precision            | 0.561         | 0.565               |
-| Recall               | 0.485         | 0.564               |
-
 <table>
  <tr>
   <th> </th>
@@ -127,17 +123,6 @@ We decide to turn left, and discover the topics landscapes. Don't loose the trac
 <i>Test bold text</i>
 Now that we've become acquainted with our speakers, let's have a look at what they're talking about, regardless of gender. We use as baseline Latent Dirichlet Allocation to extract topics from those bulk quotes. We extracted and processed <b>248'211 quotes</b>, among which we have <b>47'374 women and 200'837 men</b>. So <b>20%</b> (only...) of our guests are women, and the <b>80%</b> left are men. 
 LDA managed to extract <b>7 topics</b> that are presented in details below :
-
-
-| Topic number | Topic main word | Second word       | Third word             | Fourth word      | Description interpretation |
-|--------------|-----------------|-------------------|------------------------|------------------|----------------------------|
-| 3            | 0.068*"climate" | 0.064*"change"    | 0.039*"climate_change" | 0.016*"emission" | climate change             |
-| 2            | 0.030*"people"  | 0.022*"want"      | 0.016*"need"           | 0.011*"way"      | action                     |
-| 4            | 0.028*"year"    | 0.028*"go"        | 0.022*"people"         | 0.021*"think"    | long term consequences     |
-| 7            | 0.025*"long"    | 0.018*"term"      | 0.018*"level"          | 0.013*"air"      | long term consequences     |
-| 5            | 0.014*"use"     | 0.011*"food"      | 0.011*"plant"          | 0.011*"year"     | resources                  |
-| 1            | 0.015*"work     | 0.013*"community" | 0.012*"new"            | 0.012*"help"     | solutions                  |
-| 6            | 0.023*"water"   | 0.012*"feel"      | 0.010*"number"         | 0.009*"warming"  | resources                  |
 
 <table>
  <tr>
@@ -233,12 +218,6 @@ We don’t learn much from a gender-split analysis, but we can still observe tha
 Let's put on our hiking shoes, grab our camera and follow the track. Will logistic regression and random forest lead us to a clear gender distinction within topics ? We infer each quote topic multinomial distribution, and we write down the score for each topic to constitute our feature matrix. Then we make sure that we have 
 as many quotes from men than women speakers. Finally, we took care of tuning random forest in order to select the best depth and number of estimators.  
 
-|                      | Random Forest | Logistic regression |
-|----------------------|---------------|---------------------|
-| Accuracy on test set | 0.741         | 0.518               |
-| Precision            | 0.741         | 0.524               |
-| Recall               | 0.747         | 0.463               |
-
  <table>
  <tr>
   <th> </th>
@@ -323,13 +302,6 @@ We reached almost as good results as from word only predictions. Dear guest spea
 a man or a woman. Well, that is not amazing yet... 
 
 
-|                      | Random Forest | Logistic regression |
-|----------------------|---------------|---------------------|
-| Accuracy on test set | 0.562         | 0.559               |
-| Precision            | 0.557         | 0.56                |
-| Recall               | 0.488         | 0.541               |
-
-
  <table>
  <tr>
   <th> </th>
@@ -384,13 +356,6 @@ about their speaker occupation. Have you already spot the "hoax" word into Trump
 
 For a last time, we predict with logistic regression and random forest classifier.
 
-
-|                      | Random Forest | Logistic regression |
-|----------------------|---------------|---------------------|
-| Accuracy on test set | 0.883         | 0.686               |
-| Precision            | 0.938         | 0.258               |
-| Recall               | 0.15          | 0.697               |
-
 <table>
  <tr>
   <th> </th>
@@ -444,14 +409,6 @@ So we looked at the differences between the two genders. We visualized the densi
 
 
 We therefore looked to see if there were differences between positive and negative quotes. Negative quotes are those with a score strictly below 0 and positive quotes are those with a score strictly above 0. You can find below examples of positive and negative quotes. 
-
-
-| Examples quotations with negative score  | Score | Examples quotations with positive score | Score |
-|---|---|---|---|
-| "#MeToo has created an environment of  empathy. The biggest positive is that now people don't dismiss it." | 0,6808 | "It's indicative of a very worrying trend. If we don't  reign in global warming pollution,about a million species or 15 percent of species on earth are vulnerable to extinction  from climate change." | -0,5267 |
-| "Our Planet and Environment is something we all  cherish greatly" | 0,9020 | "It's just a technological engineering problem to solve on what  to do with the waste" | -0,5719 |
-| "This is really a vote of no confidence  because we believe that the system has become captive" | 0,2247 | "This is not over. The state agencies have failed the  process." | -0,250 |
-| "There are inspiring examples across Africa.  We must take the opportunity to share best practices  andlearn from each other."  | 0,9403 | "There is anger, despair and horror amoung residents -  who fear further years of noise, dust, pollution and the spread of cancer." | -0,9538 |
 
  <table>
  <tr>
@@ -549,6 +506,7 @@ On the use of adverbs, it can be noted that the three most used by both genders 
  
   ![assets/adv_freq.jpg](assets/adv_freq.jpg)
 
+ <img src="adv_freq.jpg" alt="Trulli">
 
 <h2> Conclusion </h2>
 
